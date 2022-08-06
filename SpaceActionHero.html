@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Space Action Hero</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Need to configure this">
+        <link rel="stylesheet" href="SpaceActionHero.css">
+        <!--link rel="title" href="images/NirayaTitle.png"-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- nav bar -->
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="/index.html" id="navbar__logo">Katherine Stein</a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="/index.html" class="navbar__links">About Me</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/index.html#projects" class="navbar__links">Projects</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/Resume.html" class="navbar__links">Resume</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#contact" class="navbar__links">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <script src="app.js"></script>
+        <div class="main">
+            <div class="main__container">
+                <section>
+                    <div class="main__content">
+                        <h1>Space Action Hero</h1>
+                        <div class="img">
+                
+                            <div class="games__turntable">
+                                <img class="slideshow" src="images/SpaceActionHeroTitle.png" alt="Image of Space Shooter title screen" id="slideshow-img">
+                                <img class="slideshow" src="images/SpaceShooterHeroMain.png" alt="Image of Space Shooter gameplay" id="slideshow-img">
+                                </a>
+                            </div>
+                            <script>
+                                var myIndex = 0;
+                                carousel();
+                                
+                                function carousel() {
+                                  var i;
+                                  var x = document.getElementsByClassName("slideshow");
+                                  for (i = 0; i < x.length; i++) {
+                                    x[i].style.display = "none";  
+                                  }
+                                  myIndex++;
+                                  if (myIndex > x.length) {myIndex = 1}    
+                                  x[myIndex-1].style.display = "block";  
+                                  setTimeout(carousel, 2500); // Change image every 2 seconds
+                                }
+                            </script>
+                        </div>
+                        <div class="project__desc">
+                            <div class="quicklook">
+                                <h3>Timeframe: June 2022</h3>
+                                <h3>Role: Gameplay Developer, Animator, Designer, UI and Audio</h3>
+                                <h3>Tools: Unity and Visual Studio</h3>
+                                <h3>Languages: C#</h3>
+                                <h3>Team: Katherine Stein</h3><br>
+                            </div>
+                            <h2>Description:</h2>
+                            <p>Space Action Hero is a 2D sci-fi space shooter where you control a spaceship flying through space and battling enemy spaceships. Free the galaxy from the threat of the invading forces and usher in a new era of peace. Gameplay includes firing and dodging projectiles, meteors, and enemy ships. Destroy enemies to gain power-ups including speed boosts, increase your fire power to a double shot, and shields. Fight your way through levels and waves to get to the boss battle at the end that has several phases.</p><br>
+        
+                            <h2>Development:</h2>
+                            <p>I started and finished Space Action Hero during June of 2022 in an attempt to learn Unity by participating in a course on Udemy. Through this course, I learned how to add power-ups, create phases of a boss battle, animate sprites, add music and audio effects, UI, and taking advantage of Unity's particle effect system. (After finishing the course, I decided to add to the game by implementing an options menu where you could turn down or disable sounds and music, a harder mode, allowing power-ups to be brought between levels, and made more levels with more waves of enemies.)
+                            </p><br>
+        
+                            <h2>Challenges:</h2>
+                            <p>One of the biggest challenges I had during the development of this game was the animation system. I had an issue animating the boss specifically where it would skip the first phase of the boss battle. After retracing my steps, I noticed that I put the animation instance on the wrong part of the boss's body, and simply had to make a single instance of the boss and it's shell before assigning the animator to the singular instance. Regardless of the bumps I encountered while trying to animate the boss, one of the things I was most excited about learning more about animation and connecting it to gameplay. Since I am mostly a programmer, animation and art is not my strongest area. (I love learning new things_________________________________________________) 
+                            </p><br>
+                            
+                            <h2>What went well:</h2>
+                            <p>One of the things I thought went very well was keeping to a schedule in order to finish the game in a timely manner. I was able to stay motivated even when I hit walls like the animation bug.
+                                _______________________</p>
+                        <!-- 
+                        description
+                        challenges
+                        what went well
+                        what would i do better
+                        
+                        video
+                        more screenshots
+                        play game
+                        link to github/code
+                        -->
+                        </div>   
+                            
+                    </div> 
+            </section>
+            </div>     
+        </div>
+        <!--/div-->
+    </body>
