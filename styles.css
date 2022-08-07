@@ -578,7 +578,7 @@ textarea.input {
       margin: auto;
       padding: auto;
       min-width: none;
-      max-width: fit-content;
+      max-width: 75%;
     }
 
     .main__content p {
