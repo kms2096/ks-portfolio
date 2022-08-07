@@ -1,3 +1,7 @@
+.html {
+    overflow-x: hidden;
+  }
+
 .navbar {
     position: sticky;
     background: #000000;
@@ -76,12 +80,12 @@
         font-size: 45px;
     }
 
-    #Niraya__main__img {
-        width: 490px;
+    /*#Niraya__main__img {
+        max-width: fit-content;
         float: unset;
         margin: auto;
         padding: 25px 0 0 0;
-    }
+    }*/
 
     .quicklook {
         font-size: 20px;
