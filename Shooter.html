@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Unnamed Third Person Shooter</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Need to configure this">
+        <link rel="stylesheet" href="gamepages.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- nav bar -->
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="https://kms2096.github.io/ks-portfollio/" id="navbar__logo">Katherine Stein</a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="https://kms2096.github.io/ks-portfollio/" class="navbar__links">About Me</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="https://kms2096.github.io/ks-portfollio/#projects" class="navbar__links">Projects</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="https://kms2096.github.io/ks-portfollio/#resume" class="navbar__links">Resume</a>
+                    </li>
+                    <!--li class="navbar__item">
+                        <a href="/ContactMe.html" class="navbar__links">Contact</a>
+                    </li-->
+                </ul>
+            </div>
+        </nav>
+        <script src="app.js"></script>
+        <div class="main">
+            <div class="main__container">
+                <section>
+                    <div class="main__content">
+                        <h1>Unnamed Third Person Shooter</h1>
+                        <div class="img">
+                
+                            <div class="games__turntable">
+                                <img class="slideshow" src="images/Shooter.png" alt="Image of Shooter made in Unreal Engine 4" id="slideshow-img">
+                                </a>
+                            </div>
+                            <script>
+                                var myIndex = 0;
+                                carousel();
+                                
+                                function carousel() {
+                                  var i;
+                                  var x = document.getElementsByClassName("slideshow");
+                                  for (i = 0; i < x.length; i++) {
+                                    x[i].style.display = "none";  
+                                  }
+                                  myIndex++;
+                                  if (myIndex > x.length) {myIndex = 1}    
+                                  x[myIndex-1].style.display = "block";  
+                                  setTimeout(carousel, 2500); // Change image every 2 seconds
+                                }
+                            </script>
+                        </div>
+                        <div class="project__desc">
+                            <div class="quicklook">
+                                <h3>Timeframe: July 2022 - Present</h3>
+                                <h3>Role: Gameplay Developer, Animator, Designer, UI and Audio</h3>
+                                <h3>Tools: Unreal Engine 4 and Visual Studio</h3>
+                                <h3>Languages: C++ and Blueprints scripting</h3>
+                                <h3>Team: Katherine Stein</h3><br>
+                            </div>
+                            <h2>Description:</h2>
+                            <p>I am currently working on this third person shooter in Unreal Engine 4. I still have to work on the enemies, levels, health, and weapons. From this project, I have gained a basic understanding of Blueprints and blend spaces. I have finalized the animations for the main character and worked on the starter weapon. Including particle effects firing and on impact, recoil animations, beam particles, zoom in when aiming, and aiming towards the crosshair in the center of the screen. I have also implemented controls for both keyboard and controllers inputs.</p><br>
+        
+                            <h2>Development:</h2>
+                            <p>I started this shooter game in July 2022 in an effort to learn Unreal Engine. After being unable to find thorough enough courses on Youtube I chose to take an Unreal Course on Udemy. So far I have completed topics such as: animation particularly in a 3D environment, using blend Spaces to handle diagonal movements, combining animations like the top animation recoiling when firing a weapon and the bottom still be controlled by the player. Even though I do not call myself an animator, so far this has been one of my favorite aspects when developing this game. I really enjoyed trimming the animations, blending them together to get more movement, and getting the top and bottom animations to be different. 
+                            </p><br>
+        
+                            <h2>Challenges:</h2>
+                            <p>I originally started this project on Unreal Engine 5 but after completing the main character's animation blend Space, my computer continued to lag and run slowly. After reading that Unreal Engine 4 ran smoother due to more optimization, I decided to give that a try instead causing me to restart the entire project from scratch. Although it was a giant
+                            pain, it was the right choice overall. Another problem I ran into was the controller not moving the character at all. After looking into project settings, making sure that the game mode was properly overridden, and that the code was 
+                            correct, I found that the issue was in the Blueprints where "Auto Possess Character" was off. Once I turned that on and set it to zero, my character had full mobility. An issue I am still currently working on fixing is the muzzle flash particle effects. They are currently programmed to show up at the end of the weapon and they do, until the character moves. Then the flash can sometimes begin by appearing from somewhere other than the barrel of the gun.
+                            </p><br>
+                            
+                            <!--h2>What went well:</h2>
+                            <p>_______________________</p-->
+                        <!-- 
+                        what went well
+                        what would i do better
+                        
+                        video
+                        more screenshots
+                        play game
+                        link to github/code
+                        -->
+                        </div>   
+                            
+                    </div> 
+            </section>
+            </div>     
+        </div>
+        <!--/div-->
+    </body>

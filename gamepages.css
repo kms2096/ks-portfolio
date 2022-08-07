@@ -1,0 +1,243 @@
+.navbar {
+    position: sticky;
+    background: #000000;
+    /* #131313*/
+    height: 50px;
+    justify-content: center;
+    top: 0;
+    align-items: center;
+    display: flex;
+    z-index: 999;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+#navbar__logo {
+    background-color: #be5600;
+    font-family: 'Rubik', sans-serif;
+    background-size: 100%;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-size: 30px;
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar__links {
+    color: #fff;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    justify-content: center;
+    padding: 0 1.5rem;
+    height: 100%;
+    font-size: 25px;
+}
+
+.navbar__links:hover {
+    background: #ff7300;
+    transition: all 0.3s ease;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 960px) {
+   .navbar__container {
+        padding: 0;
+    }
+
+    .project__name {
+        font-size: 45px;
+    }
+
+    #Niraya__main__img {
+        width: 490px;
+        float: unset;
+        margin: auto;
+        padding: 25px 0 0 0;
+    }
+
+    .quicklook {
+        font-size: 20px;
+        padding-top: 25px;
+        text-align: left;
+    }
+
+    .project__desc {
+        font-size: 20px;
+        padding-top: 5px;
+        text-align: left;
+    }
+
+    /* drop down menu */
+    .navbar__menu {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        position: absolute;
+        width: 100%;
+        top: -1000px;
+        opacity: 0; 
+        transition: all 0.75s ease;
+        background: #000000;
+    }
+
+    /* drop down menu */
+    .navbar__menu.active {
+        top: 100%;
+        opacity: 1;
+        height: 15vh;
+        z-index: 99;
+    }
+
+    /* drop sown text */
+    .navbar__links {
+        font-size: 1.1rem;
+        text-indent: -2.75em;
+    }
+
+    #navbar__logo {
+        padding-left: 25px;
+    }
+
+    .navbar__toggle .bar {
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.5s ease-in-out;
+        background: #fff;
+    }
+
+    #mobile-menu {
+        position: absolute;
+        top: 10%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    .navbar__toggle .bar {
+        display: block;
+        cursor: pointer;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+/* project section */
+.main__container {
+    padding: 0;
+    margin-left: -10px;
+    margin-right: -10px;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    background-color: #01001f;
+    text-align: center;
+  }
+  
+  section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+ h1 {
+    background-color: rgb(0, 0, 0);
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 15px;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+  
+  /* Niraya */
+  .main__content {
+    background-color: rgb(143, 143, 143);
+    padding-right: 35px;
+    padding-left: 35px;
+    padding-bottom: 25px;
+    margin: 35px;
+    border-radius: 15px;
+  }
+  
+  .games__turntable {
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 20px;
+  }
+  
+  #slideshow-img {
+    border-radius: 20px;
+    width: 75%;
+    height: 75%;
+    /*min-width: 800px;*/
+    margin: auto;
+    padding: auto;
+    max-width: fit-content;
+    width: 100%;
+  }
+
+  /*img {
+    width: 100%;
+    max-width: fit-content;
+  }*/
+
+  .quicklook h3 {
+    margin-top: 20px;
+    padding: auto;
+    margin: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .project__desc {
+    text-align: left;
+  }
+  
+  .project__desc h2 {
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 0px;
+    text-decoration: underline;
+  }
+  
+  .project__desc p {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
