@@ -577,6 +577,7 @@ textarea.input {
     #slideshow-img {
       margin: auto;
       padding: auto;
+      min-width: none;
       max-width: fit-content;
     }
 
