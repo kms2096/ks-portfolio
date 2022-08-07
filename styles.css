@@ -573,7 +573,7 @@ textarea.input {
     #slideshow-img {
       margin: auto;
       padding: auto;
-      min-width: 350px;
+      max-width: fit-content;
     }
 
     .main__content p {
