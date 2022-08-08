@@ -32,18 +32,15 @@ html, body {
 }
 
 #navbar__logo {
-    background-color: #be5600;
+    color: #be5600;
     font-family: 'Rubik', sans-serif;
     background-size: 100%;
     font-weight: 600;
     display: flex;
     align-items: center;
     cursor: pointer;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
     font-size: 30px;
+    text-decoration: none;
 }
 
 .navbar__menu {
@@ -67,12 +64,8 @@ html, body {
 }
 
 .navbar__links:hover {
-    background: #ff7300;
+    color: #ff7300;
     transition: all 0.3s ease;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
 }
 
 @media screen and (max-width: 960px) {
@@ -184,14 +177,10 @@ html, body {
   }
   
  h1 {
-    background-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
     font-size: 3rem;
     text-align: center;
     padding-top: 15px;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
   }
   
   /* Niraya */
@@ -217,7 +206,7 @@ html, body {
     /*min-width: 800px;*/
     margin: auto;
     padding: auto;
-    max-width: fit-content;
+    max-width: 1250px;
     width: 100%;
   }
 

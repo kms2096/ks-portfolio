@@ -32,18 +32,15 @@ html, body {
 }
 
 #navbar__logo {
-    background-color: #be5600;
+    color: #be5600;
     font-family: 'Rubik', sans-serif;
     background-size: 100%;
     font-weight: 600;
     display: flex;
     align-items: center;
     cursor: pointer;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
     font-size: 30px;
+    text-decoration: none;
 }
 
 .navbar__menu {
@@ -67,12 +64,8 @@ html, body {
 }
 
 .navbar__links:hover {
-    background: #ff7300;
+    color: #ff7300;
     transition: all 0.3s ease;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
 }
 
 .main__content {
@@ -99,33 +92,21 @@ html, body {
 
 .main__content h1 {
   font-size: 40px;
-  background-color: #be5600;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  color: #be5600;
 }
 
 .main__content h2 {
     font-size: 30px;
-    background-color: #be5600;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+    color: #be5600;
     margin-top: -1em;
 }
 
 .main__content p {
     font-size: 20px;
-    background-color: #fff;
+    color: #fff;
     padding-right: 5%;
     padding-left: 5%;
     font-weight: 600;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
 }
 
 .games__turntable {
@@ -140,7 +121,7 @@ html, body {
   /*min-width: 800px;*/
   margin: auto;
   padding: auto;
-  max-width: fit-content;
+  max-width: 1250px;
   width: 100%;
 }
 
@@ -160,14 +141,10 @@ section {
 }
 
 .projects__container h1 {
-  background-color: #fff;
+  color: #fff;
   font-size: 2.5rem;
   text-align: center;
   font-weight: 600;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
 }
 
 .projects {
@@ -348,156 +325,6 @@ section {
 }
 /* end of resume section */
 
-
-/* contact form */
-/*.contact__container {
-  box-sizing: border-box;
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  padding: 2rem;
-  background-color: #fafafa;
-  overflow: hidden;
-  margin-left: -10px;
-  margin-right: -10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.form {
-  width: 100%;
-  max-width: 820px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 20px 1px rgba(0,0,0,0.1);
-  z-index: 1000;
-  overflow: hidden;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.contact__form {
-  background-color: #1abc9c;
-  position: relative;
-  font-family: 'Rubik', sans-serif;
-}
-
-.circle {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, transparent 20%, #149279);
-  position: absolute;
-}
-
-.circle.one {
-  width: 130px;
-  height: 130px;
-  top: 130px;
-  right: -40px;
-}
-
-.circle.two {
-  width: 80px;
-  height: 80px;
-  top: 10px;
-  right: 30px;
-}
-
-.contact__form:before {
-  content: "";
-  position: absolute;
-  width: 26px;
-  height: 26px;
-  background-color: #1abc9c;
-  top: 50px;
-  left: -13px;
-  transform: rotate(45deg);
-}
-
-form {
-  padding: 2.3rem 2.2rem;
-  z-index: 10;
-  overflow: hidden;
-  position: relative;
-}
-
-.title {
-  color: #fff;
-  font-weight: 600;
-  font-size: 2rem;
-  line-height: 1;
-  margin-bottom: 0.7rem;
-}
-
-.input__container {
-  position: relative;
-  margin: 1rem 0;
-}
-
-*.input {
-  width: 100%;
-  outline: none;
-  border: 2px solid #fafafa;
-  background: none;
-  padding: 0.6rem 1.2rem;
-  color: #fff;
-  font-weight: 500;
-  font-size: 0.95rem;
-  letter-spacing: 0.5px;
-  border-radius: 25px;
-  transition: 0.3s;
-}
-
-textarea.input {
-  padding: 0.8rem 1.2rem;
-  min-height: 150px;
-  border-radius: 22px;
-  resize: none;
-  overflow-y: auto;
-}
-
-.input__container label {
-  position: absolute;
-  top: 50%;
-  left: 15px;
-  transform: translateY(-50%);
-  padding: 0 0.4rem;
-  color: #fafafa;
-  font-size: 0.9rem;
-  font-weight: 600;
-  pointer-events: none;
-  z-index: 1000;
-  transition: 0.5s;
-}
-
-.input__container.textarea label{
-  top: 1rem;
-  transform: translateY(0);
-}
-
-.btn {
-  padding: 0.6rem 1.3rem;
-  background-color: #fff;
-  border: 2px solid #fafafa;
-  font-size: 0.95rem;
-  color: #1abc9c;
-  line-height: 1;
-  border-radius: 25px;
-  outline: none;
-  cursor: pointer;
-  transition: 0.3s;
-  margin: 0;
-}
-
-.btn:hover {
-  background-color: transparent;
-  color: #fff;
-}*/
-
-
-
 @media screen and (max-width: 960px) {
     .navbar__container {
         padding: 0;
@@ -578,22 +405,6 @@ textarea.input {
       float: none;
       min-width: 250px;
     }
-
-    /*.games__turntable {
-      width: auto;
-      margin: auto;
-      padding: auto;
-      float: none;
-      
-      min-width: none;
-    }
-
-    #slideshow-img {
-      margin: auto;
-      padding: auto;
-      max-width: 250px;
-      min-width: none;
-    }*/
 
     .main__content p {
       text-align: left;

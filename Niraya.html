@@ -7,13 +7,14 @@
         <meta name="description" content="Need to configure this">
         <!--link rel="stylesheet" href="Niraya.css"-->
         <link rel="stylesheet" href="gamepages.css">
-        <link rel="title" href="images/NirayaTitle.png">
+        <!--link rel="title" href="images/NirayaTitle.png"-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
     </head>
     <body>
         <!-- nav bar -->
+        <!-- FOR SOME REASON THIS DOES NOT WORK PROPERLY *******************************************************************-->
         <nav class="navbar">
             <div class="navbar__container">
                 <a href="https://kms2096.github.io/ks-portfollio/" id="navbar__logo">Katherine Stein</a>
@@ -38,6 +39,7 @@
                 </ul>
             </div>
         </nav>
+        <script src="app.js"></script>
         <!--  -->
         <div class="main">
             <div class="main__container">
@@ -72,7 +74,7 @@
                         <div class="project__desc">
                             <div class="quicklook">
                                 <h3>Timeframe: January 2022 to May 2022</h3>
-                                <h3>Role: Gameplay Programmer and Level Designer</h3>
+                                <h3>Role: Gameplay Programmer, Narrative Design and Level Designer</h3>
                                 <h3>Tools: Visual Studio, Monogame, Github, Tiled, and Trello</h3>
                                 <h3>Languages: C#</h3>
                                 <h3>Team: Freddie Basken, Quinn Jacobs, Katherine Stein, and Victoria Lau</h3><br>
@@ -88,7 +90,7 @@
                             fun challenge for me. Another challenge was definitely the group's communication. I think that a lack of communication led to our group falling behind on our game at some points and lead to some confusion about who was doing what tasks. Having a group project on top of our regular classes, work, and social commitments could be a challenge. I think this issue is something that could have been remedied by simply utilizing Trello and Discord more often to make a schedule that everyone could agree on.</p><br>
                                 
                             <h2>What went well:</h2>
-                            <p>The hardest part was the second milestonewhich oversaw the addition of collisions, movement, and the scripting of the enemies and the player taking damage. At this point we had figured out the tile switching mechanic and level input/output. After completing this milestone, we had a solid foundation to move forward. Since we had our basic systems in place, we were able to continuously build on that foundation going forward. The scope of our project also went well. From the beginning, we wanted to focus on the movement and the combat, while everything else was a stretch goal. Once we had the basis for the movement figured out, we were able to implement the feedback from playtesting. After we ironed out what we wanted our game to look and feel like we were able to focus on the more difficult tasks at hand. During the final stretch of the semester, I also helped fix any bugs that were left, one of which was the level not changing 
+                            <p>The hardest part was the second milestone which oversaw the addition of collisions, movement, and the scripting of the enemies and the player taking damage. At this point we had figured out the tile switching mechanic and level input/output. After completing this milestone, we had a solid foundation to move forward. Since we had our basic systems in place, we were able to continuously build on that foundation going forward. The scope of our project also went well. From the beginning, we wanted to focus on the movement and the combat, while everything else was a stretch goal. Once we had the basis for the movement figured out, we were able to implement the feedback from playtesting. After we ironed out what we wanted our game to look and feel like we were able to focus on the more difficult tasks at hand. During the final stretch of the semester, I also helped fix any bugs that were left, one of which was the level not changing 
                             to the next one even though our end-of-level marker was there. The player was not able to interact with it for some reason. Through well-placed breakpoints, I figured out that although the sprite was there, the end-of-level hitbox's y-coordinate 
                             kept increasing every second causing the hitbox to be at the bottom of the level, meaning that the level would never end. The error ended up being a plus-sign in the update function, when instead the equal sign was needed.</p>
                         <!-- 
