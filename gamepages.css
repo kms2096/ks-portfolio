@@ -68,97 +68,7 @@ html, body {
   transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 960px) {
- .navbar__container {
-      padding: 0;
-  }
 
-  .project__name {
-      font-size: 45px;
-  }
-
-  /*.games__turntable {
-    padding: 0;
-  }*/
-
-  #slideshow-img.slideshow {
-    border-radius: 10px;
-  }
-
-  .quicklook {
-      font-size: 20px;
-      text-align: left;
-  }
-
-  .project__desc {
-      font-size: 20px;
-      padding-top: 5px;
-      text-align: left;
-  }
-
-  /* drop down menu */
-  .navbar__menu {
-      display: grid;
-      grid-template-columns: auto;
-      margin: 0;
-      position: absolute;
-      width: 100%;
-      top: -1000px;
-      opacity: 0; 
-      transition: all 0.75s ease;
-      background: #000000;
-  }
-
-  /* drop down menu */
-  .navbar__menu.active {
-      top: 100%;
-      opacity: 1;
-      height: 15vh;
-      z-index: 99;
-  }
-
-  /* drop sown text */
-  .navbar__links {
-      font-size: 1.1rem;
-      text-indent: -2.75em;
-  }
-
-  #navbar__logo {
-      padding-left: 25px;
-  }
-
-  .navbar__toggle .bar {
-      width: 25px;
-      height: 3px;
-      margin: 5px auto;
-      transition: all 0.5s ease-in-out;
-      background: #fff;
-  }
-
-  #mobile-menu {
-      position: absolute;
-      top: 10%;
-      right: 5%;
-      transform: translate(5%, 20%);
-  }
-
-  .navbar__toggle .bar {
-      display: block;
-      cursor: pointer;
-  }
-
-  #mobile-menu.is-active .bar:nth-child(2) {
-      opacity: 0;
-  }
-
-  #mobile-menu.is-active .bar:nth-child(1) {
-      transform: translateY(8px) rotate(45deg);
-  }
-
-  #mobile-menu.is-active .bar:nth-child(3) {
-      transform: translateY(-8px) rotate(-45deg);
-  }
-}
 
 /* project section */
 .main__container {
@@ -181,6 +91,11 @@ h1 {
   /*color: #aa4d00;*/
   color: black;
   margin-bottom: 0;
+}
+
+h2 {
+  /*color: #aa4d00;*/
+  color: black;
 }
 
 /* Niraya */
@@ -244,13 +159,14 @@ h1 {
   background: #ff7300;
   color: #000000;
   border: none;
-  border-radius: 7%;
-  padding: 0.4rem;
+  border-radius: 10%;
+  padding-left: 2rem;
+  padding-right: 2rem;
   position: relative;
   display: inline-block;
   text-decoration: none;
   font-weight: 600;
-  font-size: larger;
+  font-size: xx-large;
   font-family: 'Rubik', sans-serif;
 }
 
@@ -259,3 +175,118 @@ h1 {
   background: #000000;
   transition: all 0.3s ease;
 }
+
+@media screen and (max-width: 960px) {
+  .navbar__container {
+       padding: 0;
+   }
+ 
+   .project__name {
+       font-size: 45px;
+   }
+ 
+   .games__turntable {
+     padding-top: 25px;
+   }
+ 
+   #slideshow-img.slideshow {
+     border-radius: 10px;
+   }
+ 
+   .project__desc {
+     font-size: 1.25rem;
+     padding-top: 5px;
+     text-align: left;
+   }
+ 
+   .project__desc h1 {
+     font-size: 2rem;
+     text-align: center;
+     margin-top: 0;
+   }
+ 
+   .quicklook h3 {
+       font-size: 1.25rem;
+       text-align: left;
+   }
+ 
+   .project__desc h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+   
+  .project__desc p {
+    font-size: 1.25rem;
+  }
+  
+  .button {
+    border-radius: 10%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-weight: 600;
+    font-size: x-large;
+  } 
+ 
+   /* drop down menu */
+   .navbar__menu {
+       display: grid;
+       grid-template-columns: auto;
+       margin: 0;
+       position: absolute;
+       width: 100%;
+       top: -1000px;
+       opacity: 0; 
+       transition: all 0.75s ease;
+       background: #000000;
+   }
+ 
+   /* drop down menu */
+   .navbar__menu.active {
+       top: 100%;
+       opacity: 1;
+       height: 15vh;
+       z-index: 99;
+   }
+ 
+   /* drop sown text */
+   .navbar__links {
+       font-size: 1.1rem;
+       text-indent: -2.75em;
+   }
+ 
+   #navbar__logo {
+       padding-left: 25px;
+   }
+ 
+   .navbar__toggle .bar {
+       width: 25px;
+       height: 3px;
+       margin: 5px auto;
+       transition: all 0.5s ease-in-out;
+       background: #fff;
+   }
+ 
+   #mobile-menu {
+       position: absolute;
+       top: 10%;
+       right: 5%;
+       transform: translate(5%, 20%);
+   }
+ 
+   .navbar__toggle .bar {
+       display: block;
+       cursor: pointer;
+   }
+ 
+   #mobile-menu.is-active .bar:nth-child(2) {
+       opacity: 0;
+   }
+ 
+   #mobile-menu.is-active .bar:nth-child(1) {
+       transform: translateY(8px) rotate(45deg);
+   }
+ 
+   #mobile-menu.is-active .bar:nth-child(3) {
+       transform: translateY(-8px) rotate(-45deg);
+   }
+ }
