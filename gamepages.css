@@ -176,6 +176,125 @@ h2 {
   transition: all 0.3s ease;
 }
 
+/* contact form section */
+#contact {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  background-color: #01001f;
+}
+
+.contact__container {
+  /*margin-left: -10px;
+  margin-right: -10px;*/
+  height: 650px;
+  justify-content: center;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  font-family: 'Rubik', sans-serif;
+  background-color: #01001f;
+}
+
+.contact__container form {
+  width: 100%;
+}
+
+.contact__info {
+  color: #fff;
+  background-color: #01001f;
+
+  /* delete */
+  margin-top: 4rem;
+}
+
+.contact__form {
+  background-color: #01001f;
+  /*background-color: #ff0000;*/
+  width: 100%;
+  margin: 0 0 0 6rem;
+  min-width: 300px;
+  text-align: left;
+}
+
+label {
+  cursor: pointer;
+  color: #fff;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-bottom: 0.2rem;
+  font-weight: 500;
+  font-size: large;
+}
+
+input[type="text"] {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  border: none;
+  border-bottom: 2px solid rgb(118, 118, 118);
+  background-color: rgb(63, 63, 63);
+  outline: none;
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  margin-bottom: 1.2rem;
+}
+
+textarea {
+  width: 100%;
+  border-radius: 0.5rem;
+  border: none;
+  border-bottom: 2px solid rgb(118, 118, 118);
+  background-color: rgb(63, 63, 63);
+  outline: none;
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  margin-bottom: 1.2rem;
+  font-family: 'Rubik', sans-serif;
+  resize: none;
+  box-sizing: border-box;
+  height: 25vh;
+}
+
+.button {
+  background: #ff7300;
+  color: #000000;
+  border: none;
+  border-radius: 7%;
+  padding: 0.4rem;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: larger;
+  font-family: 'Rubik', sans-serif;
+}
+
+.button:hover {
+  color: #ff7300;
+  background: #000000;
+  transition: all 0.3s ease;
+}
+
+.icon {
+  color: #ff7300;
+  font-size: 3rem;
+  text-decoration: none;
+}
+
+.icon:hover {
+  color: #a34900;
+  ;
+  text-decoration: none;
+}
+
+/* end of contact form section */
+
 @media screen and (max-width: 960px) {
   .navbar__container {
        padding: 0;
@@ -289,4 +408,22 @@ h2 {
    #mobile-menu.is-active .bar:nth-child(3) {
        transform: translateY(-8px) rotate(-45deg);
    }
+
+   .contact__container {
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+
+  .contact__info {
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .contact__form {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
  }

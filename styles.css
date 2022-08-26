@@ -258,9 +258,9 @@ section {
 .contact__container {
   /*margin-left: -10px;
   margin-right: -10px;*/
-  height: 500px;
+  height: 650px;
   justify-content: center;
-  margin: 0 auto;
+  margin: 0;
   box-sizing: border-box;
   text-align: center;
   display: flex;
@@ -268,16 +268,22 @@ section {
   background-color: #01001f;
 }
 
+.contact__container form {
+  width: 100%;
+}
+
 .contact__info {
   color: #fff;
   background-color: #01001f;
-  margin-left: 12rem;
-  width: 15rem;
+
+  /* delete */
+  margin-top: 4rem;
 }
 
 .contact__form {
-  background-color: #ff0000;
-  width: 40%;
+  background-color: #01001f;
+  /*background-color: #ff0000;*/
+  width: 100%;
   margin: 0 0 0 6rem;
   min-width: 300px;
   text-align: left;
@@ -285,13 +291,17 @@ section {
 
 label {
   cursor: pointer;
+  color: #fff;
   box-sizing: border-box;
   display: inline-block;
   margin-bottom: 0.2rem;
+  font-weight: 500;
+  font-size: large;
 }
 
 input[type="text"] {
   width: 100%;
+  box-sizing: border-box;
   border-radius: 0.5rem;
   border: none;
   border-bottom: 2px solid rgb(118, 118, 118);
@@ -314,6 +324,7 @@ textarea {
   margin-bottom: 1.2rem;
   font-family: 'Rubik', sans-serif;
   resize: none;
+  box-sizing: border-box;
   height: 25vh;
 }
 
@@ -335,6 +346,18 @@ textarea {
   color: #ff7300;
   background: #000000;
   transition: all 0.3s ease;
+}
+
+.icon {
+  color: #ff7300;
+  font-size: 3rem;
+  text-decoration: none;
+}
+
+.icon:hover {
+  color: #a34900;
+  ;
+  text-decoration: none;
 }
 
 /* end of contact form section */
@@ -409,13 +432,14 @@ textarea {
 
     .main__content {
       text-align: center;
-      padding-left: 0;
-      padding-right: 0;
+      padding-left: 15px;
+      padding-right: 15px;
     }
 
     #profile-pic {
       margin: auto;
       padding: auto;
+      padding-top: 15px;
       float: none;
       min-width: 250px;
     }
@@ -424,7 +448,32 @@ textarea {
       text-align: left;
     }
 
+    section {
+      padding-top: 5px;
+    }
+
+    .resume__container section {
+      padding-bottom: 40px;
+    }
+
+
     .contact__container {
       flex-flow: row nowrap;
+      justify-content: center;
     }
+
+    .contact__info {
+      margin: auto;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .contact__form {
+      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+
 }
