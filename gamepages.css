@@ -113,7 +113,7 @@ h2 {
   padding-top: 50px;
 }
 
-#slideshow-img {
+.slideshow {
   border-radius: 20px;
   height: 100%;
   margin: auto;
@@ -121,6 +121,15 @@ h2 {
   max-width: 1250px;
   width: 100%;
 }
+
+/*#slideshow-img {
+  border-radius: 20px;
+  height: 100%;
+  margin: auto;
+  padding: auto;
+  max-width: 1250px;
+  width: 100%;
+}*/
 
 .quicklook h3 {
   padding: auto;
@@ -308,10 +317,10 @@ textarea {
      padding-top: 25px;
    }
  
-   #slideshow-img.slideshow {
-     border-radius: 10px;
-   }
- 
+   .slideshow {
+    border-radius: 10px;
+  }
+
    .project__desc {
      font-size: 1.25rem;
      padding-top: 5px;
