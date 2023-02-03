@@ -157,7 +157,7 @@ section {
   margin-bottom: -80px;
 }
 
-/* Niraya */
+/* Projects */
 .service-1 {
   background-color: rgb(143, 143, 143);
   width: 320px;
@@ -166,22 +166,40 @@ section {
   border-radius: 10px;
 }
 
-.img {
-  padding-top: 30px;
-}
-
 img {
   height: 170px;
   width: 100%;
+  padding-top: 30px;
 }
 
-/*.img:hover .after {
-  display: block;
-  background: rgba(0, 0, 0, .6);
-}*/
+.textOverlay {
+  text-align: center;
+  transition: .3s ease;
+  opacity: 0;
+  background-color: #ff7300;
+  position: absolute;
+  font-size: larger;
+  font-weight: bold;
+  color: black;
+  top: 26.60%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 147%; 
+  width: 320px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.textOverlay:hover {
+  opacity: 1;
+}
 
 .description {
   padding-bottom: 30px;
+  position: relative;
   text-align: center;
   margin-top: 30px;
   color: #000000;
@@ -209,10 +227,10 @@ img {
   background-color: #01001f;
 }
 
-section {
-  /*padding-top: 80px;*/
+/* section {
+  /*padding-top: 80px;
   padding-bottom: 80px;
-}
+} */
 
 .resume__container h1 {
   font-size: 2.5rem;
