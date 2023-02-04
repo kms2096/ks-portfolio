@@ -104,8 +104,8 @@ html, body {
 .main__content p {
     font-size: 20px;
     color: #fff;
-    padding-right: 5%;
-    padding-left: 5%;
+    padding-right: 4%;
+    padding-left: 4%;
     font-weight: 600;
 }
 
@@ -136,7 +136,7 @@ html, body {
 }
 
 section {
-  padding-top: 80px;
+  padding-top: 30px;
   /*padding-bottom: 80px;*/
 }
 
@@ -478,7 +478,7 @@ textarea {
     }
 
     section {
-      padding-top: 5px;
+      padding-top: 25px;
     }
 
     .resume__paper__container {
