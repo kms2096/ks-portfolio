@@ -254,6 +254,12 @@ img {
   margin: auto;
   padding: auto;
   min-height: 750px;
+  height: 100%; 
+  width: 100%;
+}
+
+.downloadButton {
+  opacity: 0;
 }
 /* end of resume section */
 
@@ -448,6 +454,7 @@ textarea {
       text-align: center;
       padding-left: 15px;
       padding-right: 15px;
+      padding-bottom: 100px;
     }
 
     #profile-pic {
@@ -462,14 +469,53 @@ textarea {
       text-align: left;
     }
 
+    #projects {
+      margin-bottom: 0;
+    }
+    
+    .projects {
+      margin-top: 0;
+    }
+
     section {
       padding-top: 5px;
     }
 
-    .resume__container section {
+    .resume__paper__container {
+      padding: 0;
+      height: 60px;
+    }
+
+    #resume {
+      margin-bottom: 0;
+    }
+
+    .resume__container {
+      margin-top: 40px;
+      padding-top: 0;
       padding-bottom: 40px;
     }
 
+    .resume__paper {
+      opacity: 0;
+      height: 10%;
+    }
+
+    .downloadButton {
+      opacity: 1;
+      top: auto;
+      text-align: center;
+    }
+
+
+
+
+
+
+
+    #contact {
+      padding-top: 20px;
+    }
 
     .contact__container {
       flex-flow: row nowrap;
