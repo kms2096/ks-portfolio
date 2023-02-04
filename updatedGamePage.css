@@ -1,0 +1,441 @@
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    position: sticky;
+    background: #000000;
+    /* #131313*/
+    height: 50px;
+    justify-content: center;
+    top: 0;
+    align-items: center;
+    display: flex;
+    z-index: 999;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+#navbar__logo {
+    color: #be5600;
+    font-family: 'Rubik', sans-serif;
+    background-size: 100%;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar__links {
+    color: #fff;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    justify-content: center;
+    padding: 0 1.5rem;
+    height: 100%;
+    font-size: 25px;
+}
+
+.navbar__links:hover {
+    color: #ff7300;
+    transition: all 0.3s ease;
+}
+
+
+
+  /* project section */
+.main__container {
+    padding: 0;
+    margin-left: -10px;
+    margin-right: -10px;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    background-color: #01001f;
+    text-align: center;
+}
+
+section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h1 {
+    font-size: 4rem;
+    /*color: #aa4d00;*/
+    padding-left: 80px;
+    color: black;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: #ff7300;
+    font-weight: bolder;
+    text-align: justify;
+}
+
+h2 {
+    /*color: #aa4d00;*/
+    color: black;
+}
+
+  /* Game content */
+.main__content {
+    background-color: 01001f(143, 143, 143);
+    padding-bottom: 25px;
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+
+.games__turntable {
+    text-align: center;
+}
+
+.slideshow {
+    border-radius: 20px;
+    height: 100%;
+    margin: auto;
+    padding: auto;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.quicklook {
+    padding-top: 10px;
+}
+
+.quicklook h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.project__desc {
+    text-align: left;
+    background-color:rgb(143, 143, 143);
+    padding-bottom: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.project__desc h2 {
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 0px;
+    text-decoration: underline;
+}
+
+.project__desc p {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.project__link {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    column-gap: 1rem;
+    justify-content: center;
+}
+
+.button {
+    background: #be5600;
+    color: #000000;
+    border: none;
+    border-radius: 10%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: x-large;
+    font-family: 'Rubik', sans-serif;
+}
+
+.button:hover {
+    color: #be5600;
+    background: #000000;
+    transition: all 0.3s ease;
+}
+
+  /* contact form section */
+#contact {
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    background-color: #01001f;
+}
+
+.contact__container {
+    /*margin-left: -10px;
+    margin-right: -10px;*/
+    height: 650px;
+    justify-content: center;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    font-family: 'Rubik', sans-serif;
+    background-color: #01001f;
+}
+
+.contact__container form {
+    width: 100%;
+}
+
+.contact__info {
+    color: #fff;
+    background-color: #01001f;
+
+    /* delete */
+    margin-top: 4rem;
+}
+
+.contact__form {
+    background-color: #01001f;
+    /*background-color: #ff0000;*/
+    width: 100%;
+    margin: 0 0 0 6rem;
+    min-width: 300px;
+    text-align: left;
+}
+
+label {
+    cursor: pointer;
+    color: #fff;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-bottom: 0.2rem;
+    font-weight: 500;
+    font-size: large;
+}
+
+input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    border: none;
+    border-bottom: 2px solid rgb(118, 118, 118);
+    background-color: rgb(63, 63, 63);
+    outline: none;
+    color: #fff;
+    padding: 0.4rem 0.8rem;
+    margin-bottom: 1.2rem;
+}
+
+textarea {
+    width: 100%;
+    border-radius: 0.5rem;
+    border: none;
+    border-bottom: 2px solid rgb(118, 118, 118);
+    background-color: rgb(63, 63, 63);
+    outline: none;
+    color: #fff;
+    padding: 0.4rem 0.8rem;
+    margin-bottom: 1.2rem;
+    font-family: 'Rubik', sans-serif;
+    resize: none;
+    box-sizing: border-box;
+    height: 25vh;
+}
+
+/* .button {
+    background: #ff7300;
+    color: #000000;
+    border: none;
+    border-radius: 7%;
+    padding: 0.4rem;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: larger;
+    font-family: 'Rubik', sans-serif;
+}
+
+.button:hover {
+    color: #ff7300;
+    background: #000000;
+    transition: all 0.3s ease;
+} */
+
+.icon {
+    color: #ff7300;
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+.icon:hover {
+    color: #a34900;
+    ;
+    text-decoration: none;
+}
+  /* end of contact form section */
+
+
+@media screen and (max-width: 960px) {
+    .navbar__container {
+        padding: 0;
+    }
+
+    .project__name {
+        font-size: 45px;
+    }
+
+    .slideshow {
+        border-radius: 10px;
+    }
+
+    .project__desc {
+        font-size: 1.25rem;
+        padding-top: 5px;
+        text-align: left;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    h1 {
+        font-size: 3rem;
+        text-align: center;
+        padding: 0;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .quicklook h3 {
+        font-size: 1.25rem;
+        text-align: left;
+    }
+
+    .project__desc h2 {
+        font-size: 1.5rem;
+        margin-top: 0;
+    }
+
+    .project__desc p {
+        font-size: 1.25rem;
+    }
+    
+    .button {
+        border-radius: 10%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-weight: 600;
+        font-size: x-large;
+    } 
+
+     /* drop down menu */
+    .navbar__menu {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        position: absolute;
+        width: 100%;
+        top: -1000px;
+        opacity: 0; 
+        transition: all 0.75s ease;
+        background: #000000;
+    }
+
+     /* drop down menu */
+    .navbar__menu.active {
+        top: 100%;
+        opacity: 1;
+        height: 15vh;
+        z-index: 99;
+    }
+
+     /* drop sown text */
+    .navbar__links {
+        font-size: 1.1rem;
+        text-indent: -2.75em;
+    }
+
+    #navbar__logo {
+        padding-left: 25px;
+    }
+
+    .navbar__toggle .bar {
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.5s ease-in-out;
+        background: #fff;
+    }
+
+    #mobile-menu {
+        position: absolute;
+        top: 10%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    .navbar__toggle .bar {
+        display: block;
+        cursor: pointer;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .contact__container {
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+
+    .contact__info {
+        margin: auto;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .contact__form {
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
