@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>A.R.C.A.N.A.</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Need to configure this">
+        <link rel="stylesheet" href="updatedGamePage.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+        <!-- Social media icons -->
+        <script src="https://kit.fontawesome.com/b895076af2.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <!-- nav bar -->
+            <nav class="navbar">
+                <div class="navbar__container">
+                    <a href="https://kms2096.github.io/ks-portfolio/" id="navbar__logo">Katherine Stein</a>
+                    <div class="navbar__toggle" id="mobile-menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <ul class="navbar__menu">
+                        <li class="navbar__item">
+                            <a href="https://kms2096.github.io/ks-portfolio/" class="navbar__links">About Me</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="https://kms2096.github.io/ks-portfolio/#projects" class="navbar__links">Projects</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="https://kms2096.github.io/ks-portfolio/#resume" class="navbar__links">Resume</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#contact" class="navbar__links">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <script src="app.js"></script>
+        </header>
+        <script src="app.js"></script>
+        <!--  -->
+        <div class="main">
+            <div class="main__container">
+                <section>
+                    <div class="main__content">
+                        <div class="img">
+                            <div class="games__turntable">
+                                <img class="slideshow" src="images/Arcana/A_Potions.png" alt="Potions room in ARCANA">
+                                <img class="slideshow" src="images/Arcana/A_Library.png" alt="Library in ARCANA">
+                            </div>
+                            <!--TODO: Change this into a slideshow in iMovie-->
+                            <script>
+                                var myIndex = 0;
+                                carousel();
+                                
+                                function carousel() {
+                                  var i;
+                                  var x = document.getElementsByClassName("slideshow");
+                                  for (i = 0; i < x.length; i++) {
+                                    x[i].style.display = "none";  
+                                  }
+                                  myIndex++;
+                                  if (myIndex > x.length) {myIndex = 1}    
+                                  x[myIndex-1].style.display = "block";  
+                                  setTimeout(carousel, 2500); // Change image every 2 seconds
+                                }
+                            </script>
+                        </div>
+                        <h1>A.R.C.A.N.A.</h1>
+                        <div class="project__desc">
+                            <div class="quicklook">
+                                <h3>Time frame: February 2023 to March 2023</h3>
+                                <h3>Role: UI designer and Level Designer</h3>
+                                <h3>Tools: Unity and Visual Studio</h3>
+                                <h3>Languages: C#</h3>
+                                <h3>Team: Tyler Grant, Christopher Johns, Anthony Levick, Joey Stanton, and Katherine Stein 
+                                </h3><br>
+                            </div>
+                            <h2>Description:</h2>
+                            <p>You and a friend are two apprentices of a powerful Archmage that are doing their best to understand various forms of magic through the vague notes of your mentor. All of a sudden, a frantic note came in from the Archmage saying he was in trouble and required your assistance immediately as he was unable to teleport himself out of the situation. Following the reading of the note, the entire lab shook and one of the apprentices was magically thrown through a portal into the Archmage’s large study. Thankfully, it seemed the Archmage used some of his remaining power to create that portal so you could have access to all of his notes. You two will need to communicate together to solve the problems ahead without knowing what the other player is looking at.</p><br>
+        
+                            <h2>Development:</h2>
+                            <p>All Really Cool Archmages Need Assistants, or A.R.C.A.N.A. was a group project created for Game Design and Development II. We were given five weeks from initial ideation to having a final playable product. The idea we settled on was to create a multiplayer game focused on communication, where the players cannot see each other's screens. 
+                                
+                                <!-- TODO: Is this necessary?? -->
+                                Given this prompt, communication as a group had to be a priority. 
+                                
+                            After coming up with the idea for the first minigame, Anthony and I began creating the levels, I worked on the Library and Anthony created the Potions room. This took me a minute to get used to since I have never used the 3D version of Unity before. Once the Library was completed, I began designing a second possible minigame and came up with an idea for a maze with a rune circle in the center. Our group began to work on implementing the maze into the game and I finished up the Library by adding a second floor where the Librarian can guide the player through the maze. Once the room was finished, I started working on the UI. I created the pause menu, main menu, loading screens, win/loss pages and the credits pages.</p><br>
+        
+                            <h2>Challenges:</h2>
+                            <p>With no prior experience in 3D Unity, I had some trouble adjusting to it. Once I finished the first floor of the Library, I felt comfortable enough to do the second floor and do more work if given the time. One issue the group had was spring break. With some of us having plans, it was hard to be steady with our work. It also took some time to come back and get everyone back up to speed. While tasks were always completed, I think that communication on those tasks could have been handled better overall. We had a Trello board, but lost focus on it, instead moving to Discord.</p><br>
+                                
+                            <h2>What went well:</h2>
+                            <p>Despite not having the best communication, everyone in the group knew what needed to be done and who was doing what. Whenever someone had a question or an issue, it would get asked in Discord and either be answered or there would be a quick meeting in the voice channel. Since we all have experience using Unity and source control, merge conflicts were kept to a minimum. While we initially over-scoped the game by wanting to include three minigames, we reeled ourselves back in fairly quickly and finished the game with two puzzles, voice acting, subtitles, and a full menu system.</p>
+                        <div class="project__link">
+                            <a href="https://github.com/Anthonylevick1121/ARCANA-3D" target="blank" class="button">Github</a>
+                        </div>
+                        </div>
+                    </div>      
+                </section>
+            </div>
+        </div>
+        <footer>
+            <!-- contact me -->
+            <h1 id="contact">Contact Me</h1>
+            <div class="contact__container">
+                <div class="form">
+                    <div class="contact__info">
+                        <a href="https://github.com/kms2096" target="blank" class="icon">
+                            <i class="fa-brands fa-github-square"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/katherinemstein" target="blank" class="icon">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:kms2096@g.rit.edu" target="blank" class="icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    <br>
+                    (585) 309-3015<br>
+                    kms2096@g.rit.edu
+                    </div>
+                    <!--div class="contact__form">
+                        <form>
+                            <label for="name">Name</label>
+                            <br>
+                            <input type="text" required placeholder="Name">
+                            <label for="email">Email Address</label>
+                            <br>
+                            <input type="text" required placeholder="Your Email">
+                            <label for="email">Message</label>
+                            <br>
+                            <textarea message="text" required placeholder="Your Message"></textarea>
+                            <button class="button" type="button">Submit</button>
+                        </form>
+                    </div-->
+                </div>
+            </div>
+            <!-- end of contact form -->
+        </footer>
+    </body>

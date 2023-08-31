@@ -159,6 +159,54 @@ section {
   margin-bottom: -80px;
 }
 
+
+#btn_container {
+  margin: 10rem;
+  margin: 2% 5%;
+  text-align: center;
+}
+
+.filterDiv {
+  display: none;
+} 
+
+.show {
+  display: block;
+} 
+
+/* Style the buttons */
+.btn {
+  background: #ff7300;
+  color: #000000;
+  border: none;
+  border-radius: 10%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: x-large;
+  font-family: 'Rubik', sans-serif;
+  margin: 5px;
+}
+
+.btn:hover {
+  color: #be5600;
+  background: #000000;
+  transition: all 0.3s ease;
+}
+
+.btn.active {
+  color: #df6400;
+  background: #000000;
+}
+
+
+
+
 /* Projects */
 .service-1 {
   background-color: rgb(143, 143, 143);

@@ -54,7 +54,7 @@
             <img src="images/profile.jpg" alt="Picture of Katherine Stein" id="profile-pic">
             <h1>Katherine Stein</h1>
             <h2>Game Designer and Developer</h2>
-            <p>I am a Game Design and Development major at RIT, minoring in Computer Science and Creative Writing. 
+            <p>I am a fourth year Game Design and Development major at RIT.
               I have proficiency in C#, C, and C++, with a solid understanding of Java, HTML, and CSS. I am also comfortable 
               using Unity, Unreal Engines 4 and 5, MonoGame, Visual Studio, Visual Studio Code, jGRASP, the command line 
               and Linux. Although I have practice with and understanding of level design, web development, AI, and animation, 
@@ -75,11 +75,11 @@
 
             <!--HIGHLIGHT REEL-->
             <div class="games__turntable">
-              <a href="#projects">
+              <!--a href="#projects"-->
                 <video class="slideshow-vid" autoplay muted loop>
-                  <source src="videos/PortfolioGameplay.mp4">
+                  <source src="videos/UpdatedPortfolioGamePlay.mp4">
                 </video>
-              </a>
+              <!--/a-->
             </div>
           </div>
         </section>
@@ -88,22 +88,82 @@
             <section>
               <h1 id="projects">Projects</h1>
               <div class="projects">
+                <!-- TODO: should this become a drop down menu on mobile screens?? -->
+                <div id="btn_container">
+                  <button class="btn active" onclick="filterSelection('all')">Show All</button>
+                  <button class="btn" onclick="filterSelection('Unity/C#')">Unity/C#</button>
+                  <button class="btn" onclick="filterSelection('Unreal/C++')">Unreal/C++</button>
+                  <!--button class="btn" onclick="filterSelection('Games')">Games</button>
+                  <button class="btn" onclick="filterSelection('Non-Games')">Non-Games</button-->
+                  <button class="btn" onclick="filterSelection('GameJam')">Game Jams</button>
+                  <button class="btn" onclick="filterSelection('ClassProject')">Class Projects</button>
+                  <button class="btn" onclick="filterSelection('SoloProjects')">Solo Projects</button>
+                  <button class="btn" onclick="filterSelection('GroupProject')">Group Projects</button>
+                </div>
+                <!-- A.R.C.A.N.A. -->
+                <a href="Arcana.html" style="text-decoration: none;" target="_self">
+                  <div class="filterDiv Unity/C# Games ClassProject GroupProject">
+                    <div class="service-1">
+                      <div class="img">
+                        <img src="images/Arcana/A_Title.png" alt="Potions room in A.R.C.A.N.A.">
+                      </div>
+                      <div class="description">
+                          <h2>A.R.C.A.N.A.</h2>
+                          <p>You and a friend are the apprentices of a powerful Archmage trying to learn magic. A note comes in from him saying he is in trouble! After reading the note, the entire lab shook and one of the apprentices was thrown through a portal into the Archmage’s study. It seemed the Archmage used some of his remaining power to create that portal so you could have access to all of his notes. You two will need to communicate together to solve the problems ahead without knowing what the other player is looking at.</p>
+                          <div class="textOverlay">Unity<br>C#<br><br>Group Project</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
               <!-- High Noon -->
               <a href="HighNoon.html" style="text-decoration: none;" target="_self">
-                <div class="service-1">
-                  <div class="img">
-                    <img src="images/HighNoon/HN_Title.png" alt="Title screen in High Noon">
+                <div class="filterDiv Unity/C# Games ClassProject SoloProjects">
+                  <div class="service-1">
+                    <div class="img">
+                      <img src="images/HighNoon/HN_Title.png" alt="Title screen in High Noon">
+                    </div>
+                    <div class="description">
+                      <h2>High Noon</h2>
+                      <p>Big trouble comes riding in when a rival gang tries to take over what is left of a small Western town. 
+                        Once a thriving settlement, the gang has scared everyone off of the streets. You are the only one brave 
+                        enough to come out of hiding and challenge them. Take your stand at the center of the town and defend 
+                        it against the onslaught of invaders such as the tank-like Coffin or the trigger-happy Cactus. Survive 
+                        the wild west and be the last one standing. Can the people count on you to bring order and peace back 
+                        to their quaint town?</p>
+                      <div class="textOverlay">Unity<br>C#<br><br>Solo Project
+                      </div>
+                    </div>
                   </div>
-                  <div class="description">
-                    <h2>High Noon</h2>
-                    <p>Big trouble comes riding in when a rival gang tries to take over what is left of a small Western town. 
-                      Once a thriving settlement, the gang has scared everyone off of the streets. You are the only one brave 
-                      enough to come out of hiding and challenge them. Take your stand at the center of the town and defend 
-                      it against the onslaught of invaders such as the tank-like Coffin or the trigger-happy Cactus. Survive 
-                      the wild west and be the last one standing. Can the people count on you to bring order and peace back 
-                      to their quaint town?</p>
-                    <div class="textOverlay">Unity<br>C#
-                      <!-- <br><br>Solo Project -->
+                </div>
+              </a>
+              <!-- Willow's Mansion -->
+              <a href="" style="text-decoration: none;" target="_self">
+                <div class="filterDiv Unity/C# Games GameJam GroupProject">
+                  <div class="service-1">
+                    <div class="img">
+                      <img src="images/WM_GamePlay.jpg" alt="Image of Shooter made in Unreal Engine 4">
+                    </div>
+                    <div class="description">
+                      <h2>Willow's Mansion</h2>
+                      <p>In Willow's Mansion, you embody the spirit of Willow, a child who was murdered. Once a kindred spirit regarded warmly by the local townspeople, a traveling party of ghost hunters inadvertently welcomed all sorts of evil into the mansion Willow haunts. You now must use her powers to guide the characters to artifacts that hold the key to Willow’s power while keeping them out of harm’s way. Be careful not to go too far though! Should the adventurers become spooked, they will flee, leaving Willow with no means to purge the evil spirits.</p>
+                        <div class="textOverlay">Unity<br>C#<br><br>Group Project<br>GameJam
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <!-- Japan Game Jam -->
+              <a href="Shooter.html" style="text-decoration: none;" target="_self">
+                <div class="filterDiv Unity/C# Games GameJam GroupProject">
+                  <div class="service-1">
+                    <div class="img">
+                      <img src="images/HeroDuo/HD_Title.png" alt="Title screen for Hero Duo">
+                    </div>
+                    <div class="description">
+                      <h2>Hero Duo</h2>
+                      <p>Hero Duo is a 2D shoot 'em up made in collaboration with the students from Kyoto Computer Gakuin during a 24 hour game jam. In Hero Duo, you can switch between two playable characters - Taro and Eagle - to defeat the legendary Godfoot, a combination of Godzilla and Bigfoot. The background is filled with scenery from Japan and the United States, such as Mt. Fuji with a piece of sushi on top, and the Statue of Liberty with a hamburger in place of the torch. This game was a fun combination of our cultures.</p>
+                        <div class="textOverlay">Unity<br>C#<br><br>Group Project<br>GameJam
+                        </div>
                     </div>
                   </div>
                 </div>
@@ -126,61 +186,67 @@
                 </div-->  
               <!-- Niraya -->
               <a href="Niraya.html" style="text-decoration: none;" target="_self">
-                <div class="service-1">
-                  <div class="img">
-                    <img src="images/Niraya/N_dual.png" alt="Niraya overworld and underworld">
-                  </div>
-                  <div class="description">
-                    <h2>Niraya</h2>
-                    <p>In this 2D hack and slash platformer, you play as a fierce warrior that has to fight her way 
-                      through a dangerous forest filled with monsters in order to rescue her pet dog. Core gameplay 
-                      elements include jumping, attacking, dashing through enemies and death. Should you perish, 
-                      you get one more chance to get to your dog before having to start over. Once you die, the 
-                      world changes around you, the forest gets darker, and previously killed enemies come back 
-                      in the form of skeletons.</p>
-                    <div class="textOverlay">MonoGame<br>C#
-                      <!-- <br><br>Group Project -->
+                <div class="filterDiv MonoGame Games ClassProject GroupProject">
+                  <div class="service-1">
+                    <div class="img">
+                      <img src="images/Niraya/N_dual.png" alt="Niraya overworld and underworld">
+                    </div>
+                    <div class="description">
+                      <h2>Niraya</h2>
+                      <p>In this 2D hack and slash platformer, you play as a fierce warrior that has to fight her way 
+                        through a dangerous forest filled with monsters in order to rescue her pet dog. Core gameplay 
+                        elements include jumping, attacking, dashing through enemies and death. Should you perish, 
+                        you get one more chance to get to your dog before having to start over. Once you die, the 
+                        world changes around you, the forest gets darker, and previously killed enemies come back 
+                        in the form of skeletons.</p>
+                      <div class="textOverlay">MonoGame<br>C#
+                        <br><br>Group Project
+                      </div>
                     </div>
                   </div>
                 </div>
               </a>
               <!-- Space Action Hero -->
               <a href="SpaceActionHero.html" style="text-decoration: none;" target="_self">
-                <div class="service-1">
-                  <div class="img">
-                    <img src="images/SpaceActionHero/SAH_Main.png" alt="Space Shooter gameplay">
-                  </div>
-                  <div class="description">
-                    <h2>Space Action Hero</h2>
-                    <p>Space Action Hero is a 2D sci-fi space shooter where you control a spaceship flying through space 
-                      and battling enemy spaceships. Free the galaxy from the threat of the invading forces and usher in 
-                      a new era of peace. Gameplay includes firing and dodging projectiles, meteors, and enemy ships. 
-                      Destroy enemies to gain power-ups including speed boosts, increase your fire power to a double shot, 
-                      and shields. Fight your way through levels and waves to get to the boss battle at the end that has 
-                      several phases.</p>
-                    <div class="textOverlay">Unity<br>C#
-                      <!-- <br><br>Solo Project -->
+                <div class="filterDiv Unity/C# Games SoloProjects">
+                  <div class="service-1">
+                    <div class="img">
+                      <img src="images/SpaceActionHero/SAH_Main.png" alt="Space Shooter gameplay">
+                    </div>
+                    <div class="description">
+                      <h2>Space Action Hero</h2>
+                      <p>Space Action Hero is a 2D sci-fi space shooter where you control a spaceship flying through space 
+                        and battling enemy spaceships. Free the galaxy from the threat of the invading forces and usher in 
+                        a new era of peace. Gameplay includes firing and dodging projectiles, meteors, and enemy ships. 
+                        Destroy enemies to gain power-ups including speed boosts, increase your fire power to a double shot, 
+                        and shields. Fight your way through levels and waves to get to the boss battle at the end that has 
+                        several phases.</p>
+                      <div class="textOverlay">Unity<br>C#
+                        <br><br>Solo Project
+                      </div>
                     </div>
                   </div>
                 </div>
               </a>
               <!-- project 3 -->
               <a href="Shooter.html" style="text-decoration: none;" target="_self">
-                <div class="service-1">
-                  <div class="img">
-                    <img src="images/Shooter.png" alt="Image of Shooter made in Unreal Engine 4">
-                  </div>
-                  <div class="description">
-                    <h2>Personal project:</h2>
-                    <p>I am currently working on this third person shooter in Unreal Engine 4. I still have to work on 
-                      the enemies, levels, health, and weapons. From this project, I have gained a basic understanding of 
-                      Blueprints and blend spaces. I have finalized the animations for the main character and worked on 
-                      the starter weapon. Including particle effects firing and on impact, recoil animations, beam particles, 
-                      zoom in when aiming, and aiming towards the crosshair in the center of the screen. I have also 
-                      implemented controls for both keyboard and controllers inputs.</p>
-                      <div class="textOverlay">Unreal Engine 4<br>C++<br>Blueprints
-                        <!-- <br><br>Solo Project -->
-                      </div>
+                <div class="filterDiv Unreal/C++ Games SoloProjects">
+                  <div class="service-1">
+                    <div class="img">
+                      <img src="images/Shooter.png" alt="Image of Shooter made in Unreal Engine 4">
+                    </div>
+                    <div class="description">
+                      <h2>Personal project:</h2>
+                      <p>I am currently working on this third person shooter in Unreal Engine 4. I still have to work on 
+                        the enemies, levels, health, and weapons. From this project, I have gained a basic understanding of 
+                        Blueprints and blend spaces. I have finalized the animations for the main character and worked on 
+                        the starter weapon. Including particle effects firing and on impact, recoil animations, beam particles, 
+                        zoom in when aiming, and aiming towards the crosshair in the center of the screen. I have also 
+                        implemented controls for both keyboard and controllers inputs.</p>
+                        <div class="textOverlay">Unreal Engine 4<br>C++<br>Blueprints
+                          <br><br>Solo Project
+                        </div>
+                    </div>
                   </div>
                 </div>
               </a>
@@ -255,5 +321,6 @@
       </div>
       <!-- end of contact form -->
       </footer>
+      <script src="app.js"></script>
     </body>
 </html>
