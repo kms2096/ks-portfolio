@@ -164,6 +164,7 @@ section {
   margin: 10rem;
   margin: 2% 5%;
   text-align: center;
+  width:100%;
 }
 
 .filterDiv {
@@ -191,6 +192,7 @@ section {
   font-size: x-large;
   font-family: 'Rubik', sans-serif;
   margin: 5px;
+  cursor: pointer;
 }
 
 .btn:hover {

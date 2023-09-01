@@ -91,18 +91,33 @@
                 <!-- TODO: should this become a drop down menu on mobile screens?? -->
                 <div id="btn_container">
                   <button class="btn active" onclick="filterSelection('all')">Show All</button>
-                  <button class="btn" onclick="filterSelection('Unity/C#')">Unity/C#</button>
-                  <button class="btn" onclick="filterSelection('Unreal/C++')">Unreal/C++</button>
+                  <button class="btn" onclick="filterSelection('C#')">C#</button>
+                  <button class="btn" onclick="filterSelection('C++')">C++</button>
+                  <!-- TODO: Are these needed?? -->
                   <!--button class="btn" onclick="filterSelection('Games')">Games</button>
                   <button class="btn" onclick="filterSelection('Non-Games')">Non-Games</button-->
                   <button class="btn" onclick="filterSelection('GameJam')">Game Jams</button>
-                  <button class="btn" onclick="filterSelection('ClassProject')">Class Projects</button>
+                  <!--button class="btn" onclick="filterSelection('ClassProject')">Class Projects</button-->
                   <button class="btn" onclick="filterSelection('SoloProjects')">Solo Projects</button>
                   <button class="btn" onclick="filterSelection('GroupProject')">Group Projects</button>
                 </div>
+                <!-- Needs to stay here otherwise the "current" and "this" keywords don't work properly -->
+                <script>
+                  // Add active class to the current control button (highlight it)
+                  var btnContainer = document.getElementById("btn_container");
+                  var btns = btnContainer.getElementsByClassName("btn");
+
+                  for (var i = 0; i < btns.length; i++) {
+                  btns[i].addEventListener("click", function() {
+                      var current = document.getElementsByClassName("active");
+                      current[0].className = current[0].className.replace(" active", "");
+                      this.className += " active";
+                  });
+                  }
+                </script>
                 <!-- A.R.C.A.N.A. -->
                 <a href="Arcana.html" style="text-decoration: none;" target="_self">
-                  <div class="filterDiv Unity/C# Games ClassProject GroupProject">
+                  <div class="filterDiv C# Games ClassProject GroupProject">
                     <div class="service-1">
                       <div class="img">
                         <img src="images/Arcana/A_Title.png" alt="Potions room in A.R.C.A.N.A.">
@@ -117,7 +132,7 @@
                 </a>
               <!-- High Noon -->
               <a href="HighNoon.html" style="text-decoration: none;" target="_self">
-                <div class="filterDiv Unity/C# Games ClassProject SoloProjects">
+                <div class="filterDiv C# Games ClassProject SoloProjects">
                   <div class="service-1">
                     <div class="img">
                       <img src="images/HighNoon/HN_Title.png" alt="Title screen in High Noon">
@@ -138,23 +153,23 @@
               </a>
               <!-- Willow's Mansion -->
               <a href="" style="text-decoration: none;" target="_self">
-                <div class="filterDiv Unity/C# Games GameJam GroupProject">
+                <div class="filterDiv C# Games GameJam GroupProject">
                   <div class="service-1">
                     <div class="img">
-                      <img src="images/WM_GamePlay.jpg" alt="Image of Shooter made in Unreal Engine 4">
+                      <img src="images/WM_GamePlay.jpg" alt="Gameplay of Willow’s Mansion">
                     </div>
                     <div class="description">
                       <h2>Willow's Mansion</h2>
                       <p>In Willow's Mansion, you embody the spirit of Willow, a child who was murdered. Once a kindred spirit regarded warmly by the local townspeople, a traveling party of ghost hunters inadvertently welcomed all sorts of evil into the mansion Willow haunts. You now must use her powers to guide the characters to artifacts that hold the key to Willow’s power while keeping them out of harm’s way. Be careful not to go too far though! Should the adventurers become spooked, they will flee, leaving Willow with no means to purge the evil spirits.</p>
-                        <div class="textOverlay">Unity<br>C#<br><br>Group Project<br>GameJam
+                        <div class="textOverlay">Unity<br>C#<br><br>Group Project<br>Game Jam
                         </div>
                     </div>
                   </div>
                 </div>
               </a>
               <!-- Japan Game Jam -->
-              <a href="Shooter.html" style="text-decoration: none;" target="_self">
-                <div class="filterDiv Unity/C# Games GameJam GroupProject">
+              <a href="" style="text-decoration: none;" target="_self">
+                <div class="filterDiv C# Games GameJam GroupProject">
                   <div class="service-1">
                     <div class="img">
                       <img src="images/HeroDuo/HD_Title.png" alt="Title screen for Hero Duo">
@@ -162,45 +177,12 @@
                     <div class="description">
                       <h2>Hero Duo</h2>
                       <p>Hero Duo is a 2D shoot 'em up made in collaboration with the students from Kyoto Computer Gakuin during a 24 hour game jam. In Hero Duo, you can switch between two playable characters - Taro and Eagle - to defeat the legendary Godfoot, a combination of Godzilla and Bigfoot. The background is filled with scenery from Japan and the United States, such as Mt. Fuji with a piece of sushi on top, and the Statue of Liberty with a hamburger in place of the torch. This game was a fun combination of our cultures.</p>
-                        <div class="textOverlay">Unity<br>C#<br><br>Group Project<br>GameJam
+                        <div class="textOverlay">Unity<br>C#<br><br>Group Project<br>Game Jam
                         </div>
                     </div>
                   </div>
                 </div>
               </a>
-              <!-- Willow's Mansion -->
-              <a href="" style="text-decoration: none;" target="_self">
-                <div class="service-1">
-                  <div class="img">
-                    <img src="images/WM_GamePlay.jpg" alt="Image of Shooter made in Unreal Engine 4">
-                  </div>
-                  <div class="description">
-                    <h2>Willow's Mansion</h2>
-                    <p>In Willow's Mansion, you embody the spirit of Willow, a child who was murdered. Once a kindred spirit regarded warmly by the local townspeople, a traveling party of ghost hunters inadvertently welcomed all sorts of evil into the mansion Willow haunts. You now must use her powers to guide the characters to artifacts that hold the key to Willow’s power while keeping them out of harm’s way. Be careful not to go too far though! Should the adventurers become spooked, they will flee, leaving Willow with no means to purge the evil spirits.</p>
-                      <div class="textOverlay">Unity<br>C#<br><br>Group Project<br>GameJam
-                      </div>
-                  </div>
-                </div>
-              </a>
-              <!-- Japan Game Jam -->
-              <!-- <a href="Shooter.html" style="text-decoration: none;" target="_self">
-                <div class="service-1">
-                  <div class="img">
-                    <img src="images/Shooter.png" alt="Image of Shooter made in Unreal Engine 4">
-                  </div>
-                  <div class="description">
-                    <h2>Personal project:</h2>
-                    <p>I am currently working on this third person shooter in Unreal Engine 4. I still have to work on 
-                      the enemies, levels, health, and weapons. From this project, I have gained a basic understanding of 
-                      Blueprints and blend spaces. I have finalized the animations for the main character and worked on 
-                      the starter weapon. Including particle effects firing and on impact, recoil animations, beam particles, 
-                      zoom in when aiming, and aiming towards the crosshair in the center of the screen. I have also 
-                      implemented controls for both keyboard and controllers inputs.</p>
-                      <div class="textOverlay">Unity<br>C#<br><br>Group Project<br>GameJam
-                      </div>
-                  </div>
-                </div>
-              </a> -->
               <!-- A Tigers' Tale -->
               <!--a href="TigerTale.html" style="text-decoration: none;" target="_self">
                 <div class="service-1">
@@ -219,7 +201,7 @@
                 </div-->  
               <!-- Niraya -->
               <a href="Niraya.html" style="text-decoration: none;" target="_self">
-                <div class="filterDiv MonoGame Games ClassProject GroupProject">
+                <div class="filterDiv C# Games ClassProject GroupProject">
                   <div class="service-1">
                     <div class="img">
                       <img src="images/Niraya/N_dual.png" alt="Niraya overworld and underworld">
@@ -241,7 +223,7 @@
               </a>
               <!-- Space Action Hero -->
               <a href="SpaceActionHero.html" style="text-decoration: none;" target="_self">
-                <div class="filterDiv Unity/C# Games SoloProjects">
+                <div class="filterDiv C# Games SoloProjects">
                   <div class="service-1">
                     <div class="img">
                       <img src="images/SpaceActionHero/SAH_Main.png" alt="Space Shooter gameplay">
@@ -263,7 +245,7 @@
               </a>
               <!-- project 3 -->
               <a href="Shooter.html" style="text-decoration: none;" target="_self">
-                <div class="filterDiv Unreal/C++ Games SoloProjects">
+                <div class="filterDiv C++ Games SoloProjects">
                   <div class="service-1">
                     <div class="img">
                       <img src="images/Shooter.png" alt="Image of Shooter made in Unreal Engine 4">
@@ -302,6 +284,20 @@
               </div>
             </section>
         </div>
+        <!-- Needs to stay here for the Show All button to work properly the first time-->
+        <script>
+          filterSelection("all")
+          function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("filterDiv");
+            if (c == "all") c = "";
+            // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+            for (i = 0; i < x.length; i++) {
+                RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+            }
+          }
+        </script>
       <!-- end of projects -->
       <!-- resume section 
       src="kms-resume_pdf.pdf#zoom=100% class ="resume__paper" height="100%" width="100%"></iframe>-->
