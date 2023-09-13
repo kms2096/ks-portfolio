@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Willow's Mansion</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Need to configure this">
+        <link rel="stylesheet" href="updatedGamePage.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+        <!-- Social media icons -->
+        <script src="https://kit.fontawesome.com/b895076af2.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <!-- nav bar -->
+            <nav class="navbar">
+                <div class="navbar__container">
+                    <a href="https://kms2096.github.io/ks-portfolio/" id="navbar__logo">Katherine Stein</a>
+                    <div class="navbar__toggle" id="mobile-menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <ul class="navbar__menu">
+                        <li class="navbar__item">
+                            <a href="https://kms2096.github.io/ks-portfolio/" class="navbar__links">About Me</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="https://kms2096.github.io/ks-portfolio/#projects" class="navbar__links">Projects</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="https://kms2096.github.io/ks-portfolio/#resume" class="navbar__links">Resume</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#contact" class="navbar__links">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <script src="app.js"></script>
+        </header>
+        <script src="app.js"></script>
+        <!--  -->
+        <div class="main">
+            <div class="main__container">
+                <section>
+                    <div class="main__content">
+                        <div class="img">
+                            <div class="games__turntable">
+                                <img class="slideshow" src="images/WM_GamePlay.jpg" alt="Gameplay of Willow’s Mansion">
+                            </div>
+                            <!--TODO: Change this into a slideshow in iMovie-->
+                            <script>
+                                var myIndex = 0;
+                                carousel();
+                                
+                                function carousel() {
+                                  var i;
+                                  var x = document.getElementsByClassName("slideshow");
+                                  for (i = 0; i < x.length; i++) {
+                                    x[i].style.display = "none";  
+                                  }
+                                  myIndex++;
+                                  if (myIndex > x.length) {myIndex = 1}    
+                                  x[myIndex-1].style.display = "block";  
+                                  setTimeout(carousel, 2500); // Change image every 2 seconds
+                                }
+                            </script>
+                        </div>
+                        <h1>Willow's Mansion</h1>
+                        <div class="project__desc">
+                            <div class="quicklook">
+                                <h3>Time frame: July 2023</h3>
+                                <h3>Role: Gameplay Developer, Designer, UI and Audio</h3>
+                                <h3>Tools: Unity and Visual Studio</h3>
+                                <h3>Languages: C#</h3>
+                                <h3>Team: Brent Kneipp, Alex Kneipp, Katherine Stein, Nick Campola, and Ryan McGee</h3><br>
+                            </div>
+                            <h2>Description:</h2>
+                            <p>In Willow's Mansion, you embody the spirit of Willow, a child who was murdered. Once a kindred spirit regarded warmly by the local townspeople, a traveling party of ghost hunters inadvertently welcomed all sorts of evil into the mansion Willow haunts. You now must use her powers to guide the characters to artifacts that hold the key to Willow’s power while keeping them out of harm’s way. Be careful not to go too far though! Should the adventurers become spooked, they will flee, leaving Willow with no means to purge the evil spirits.</p><br>
+        
+                            <h2>Development:</h2>
+                            <p>This game was made as part of a 48hr development challenge by a team of 5. All music is original and composed by Brent Kneipp specifically for this game. The artwork and character design were similarly created by Nick Campola. Almost all 3D assets and the terrain map were created by Ryan McGee - some 3rd party assets were incorporated under creative commons (see credits). Katherine Stein and Alex Kneipp were the primary developers for the game, incorporating the various elements and game mechanics. UI elements were implemented by Katherine Stein and AI logic was developed by Alex Kneipp.
+                            </p><br>
+        
+                            <h2>Challenges:</h2>
+                            <p></p><br>
+                                
+                            <h2>What went well:</h2>
+                            <p></p>
+                        <!-- 
+                        what would i do better
+                        
+                        play game
+                        link to github/code
+                        -->
+                        <!--div class="project__link">
+                            <a href="https://igme-202-2221.github.io/project-1-kms2096/" target="blank" class="button">Play</a>
+                        </div-->
+                        </div>
+                    </div>      
+                </section>
+            </div>
+        </div>
+        <footer>
+            <!-- contact me -->
+            <h1 id="contact">Contact Me</h1>
+            <div class="contact__container">
+                <div class="form">
+                    <div class="contact__info">
+                        <a href="https://github.com/kms2096" target="blank" class="icon">
+                            <i class="fa-brands fa-github-square"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/katherinemstein" target="blank" class="icon">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:kms2096@g.rit.edu" target="blank" class="icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    <br>
+                    (585) 309-3015<br>
+                    kms2096@g.rit.edu
+                    </div>
+                    <!--div class="contact__form">
+                        <form>
+                            <label for="name">Name</label>
+                            <br>
+                            <input type="text" required placeholder="Name">
+                            <label for="email">Email Address</label>
+                            <br>
+                            <input type="text" required placeholder="Your Email">
+                            <label for="email">Message</label>
+                            <br>
+                            <textarea message="text" required placeholder="Your Message"></textarea>
+                            <button class="button" type="button">Submit</button>
+                        </form>
+                    </div-->
+                </div>
+            </div>
+            <!-- end of contact form -->
+        </footer>
+    </body>
