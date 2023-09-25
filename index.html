@@ -57,14 +57,8 @@
             <h2>Game Designer and Developer</h2>
             <p>I am a fourth year Game Design and Development major at RIT.
               I have proficiency in C#, C, and C++, with a solid understanding of Java, Javascript, HTML, and CSS. I am also comfortable using Unity, Unreal Engines 4 and 5, MonoGame, Visual Studio, and Visual Studio Code. Although I have practice with and understanding of level design, web development, AI, and animation, I prefer to focus on the programming aspect of video games. I am very interested in gameplay, and I like making the player movement and controls as fluid and responsive as possible. I like following through and taking ideas and developing them into full-fledged games and find satisfaction in solving problems and learning how things work. In my free time, I enjoy watching video game documentaries and GDC talks. Although I am self-motivated, I prefer working in a team environment, so I can get feedback on how to make my code as efficient and clean as possible.
-            <br><br> Growing up with the Nintendo Wii, DS, and Original Xbox, I loved video games from a young age. I was 
-            also very curious as a child and I would take apart electronics with my Dad to see how they work. Even now, I 
-            like to find broken consoles or broken electronics and figure out how to fix them myself. I have always enjoyed 
-            learning new things and have taught myself how to use Unity, to play guitar and ukulele, and even some programming. 
-            I first became interested in the development of video games while on a college break. During this I played two 
-            games that changed my perspective from escapist fun to a form of art. Soon after, I submitted my application to 
-            RIT for Game Design and Development and found a love for programming and creating experiences for other people 
-            to enjoy. </p>
+            <br><br> Growing up with the Nintendo Wii, DS, and Original Xbox, I loved video games from a young age. I was also very curious as a child and I would take apart electronics with my Dad to see how they work. Even now, I like to find broken consoles or broken electronics and figure out how to fix them myself. I have always enjoyed learning new things and have taught myself how to use Unity, to play guitar and ukulele, and even some programming. I first became interested in the development of video games while on a college break. During this I played two 
+            games that changed my perspective from escapist fun to a form of art. Soon after, I submitted my application to RIT for Game Design and Development and found a love for programming and creating experiences for other people to enjoy. </p>
 
             <!--HIGHLIGHT REEL-->
             <div class="games__turntable">
@@ -84,6 +78,7 @@
                 <!-- TODO: Make this a drop-down menu for mobile devices -->
                 <div id="btn_container">
                   <button class="btn active" onclick="filterSelection('all')">Show All</button>
+                  <button class="btn" onclick="filterSelection('CurrentProject')">Current Projects</button>
                   <button class="btn" onclick="filterSelection('C#')">C#</button>
                   <button class="btn" onclick="filterSelection('C++')">C++</button>
                   <!-- TODO: Are these needed?? -->
@@ -91,7 +86,7 @@
                   <button class="btn" onclick="filterSelection('Non-Games')">Non-Games</button-->
                   <button class="btn" onclick="filterSelection('GameJam')">Game Jams</button>
                   <!--button class="btn" onclick="filterSelection('ClassProject')">Class Projects</button-->
-                  <button class="btn" onclick="filterSelection('SoloProjects')">Solo Projects</button>
+                  <button class="btn" onclick="filterSelection('SoloProject')">Solo Projects</button>
                   <button class="btn" onclick="filterSelection('GroupProject')">Group Projects</button>
                 </div>
                 <!-- Needs to stay here otherwise the "current" and "this" keywords don't work properly -->
@@ -108,6 +103,36 @@
                   });
                   }
                 </script>
+                <!-- Project Mars -->
+                <a href="" style="text-decoration: none;" target="_self">
+                  <div class="filterDiv CurrentProject C++ Games ClassProject GroupProject">
+                    <div class="service-1">
+                      <div class="img">
+                        <img src="images/NASA.jpg" alt="NASA logo">
+                      </div>
+                      <div class="description">
+                          <h2>Project MARS</h2>
+                          <p>Extended space travel places significant physical challenges and demands on astronauts. This team will work with a NASA client to develop Intelligent Devices/Equipment/Instruments (IDEI) that can help maintain Crew Health and Performance (CHP) for crews living on Mars for extended periods of time. The team will integrate gamification and autonomous, wearable monitoring devices to aid in performance-based training and assessment of astronaut performance on Earth and during missions.</p>
+                          <div class="textOverlay">Unreal Engine<br>C++<br><br>Group Project</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <!-- Graphics Engine -->
+                <a href="" style="text-decoration: none;" target="_self">
+                  <div class="filterDiv CurrentProject C++ Non-Games ClassProject SoloProject">
+                    <div class="service-1">
+                      <div class="img">
+                        <img src="images/GE_Screen.png" alt="Graphics Engine running">
+                      </div>
+                      <div class="description">
+                          <h2>Graphics Engine</h2>
+                          <p>Students will explore the use of an advanced graphics API to access hardware-accelerated graphics in a real-time graphics engine context. The course will involve discussion of scene graphs, optimizations, and integration with the API object structure, as well as input schemes, content pipelines, and 2D and 3D rendering techniques. Students will explore the advanced use of the API calls to construct environments capable of real-time performance. Students will construct from scratch a graphics engine with library construction.</p>
+                          <div class="textOverlay">C++<br><br>Solo Project</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
                 <!-- A.R.C.A.N.A. -->
                 <a href="Arcana.html" style="text-decoration: none;" target="_self">
                   <div class="filterDiv C# Games ClassProject GroupProject">
@@ -125,7 +150,7 @@
                 </a>
               <!-- High Noon -->
               <a href="HighNoon.html" style="text-decoration: none;" target="_self">
-                <div class="filterDiv C# Games ClassProject SoloProjects">
+                <div class="filterDiv C# Games ClassProject SoloProject">
                   <div class="service-1">
                     <div class="img">
                       <img src="images/HighNoon/HN_Title.png" alt="Title screen in High Noon">
@@ -216,7 +241,7 @@
               </a>
               <!-- Space Action Hero -->
               <a href="SpaceActionHero.html" style="text-decoration: none;" target="_self">
-                <div class="filterDiv C# Games SoloProjects">
+                <div class="filterDiv C# Games SoloProject">
                   <div class="service-1">
                     <div class="img">
                       <img src="images/SpaceActionHero/SAH_Main.png" alt="Space Shooter gameplay">
