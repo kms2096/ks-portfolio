@@ -150,7 +150,7 @@ hr {
   justify-content: center;
 }
 
-/*TODO: Drop down menu filter in mobile*/
+/*TODO: Drop down menu filter in mobile, fix padding in mobile, fix name in navbar in mobile*/
 
 .filterDiv {
   display: none;
