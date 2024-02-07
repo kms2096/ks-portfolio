@@ -1,15 +1,18 @@
 html, body {
   overflow-x: hidden;
-  margin: 0;
-  padding: 0;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
+  font-family: 'Rubik', sans-serif;
+  background: #01001f;
+  color: #fff;
+  text-align: center;
 }
 
 .navbar {
-    position: sticky;
     background: #000000;
     /* #131313*/
+    position: fixed;
+    width: 100%;
     height: 50px;
     justify-content: center;
     top: 0;
@@ -33,7 +36,6 @@ html, body {
 
 #navbar__logo {
     color: #be5600;
-    font-family: 'Rubik', sans-serif;
     background-size: 100%;
     font-weight: 600;
     display: flex;
@@ -55,7 +57,6 @@ html, body {
     font-weight: 500;
     display: flex;
     align-items: center;
-    font-family: 'Rubik', sans-serif;
     text-decoration: none;
     justify-content: center;
     padding: 0 1.5rem;
@@ -68,62 +69,60 @@ html, body {
     transition: all 0.3s ease;
 }
 
+hr {
+  background-color: #ff7300;
+  border-color: #ff7300;
+  height: 5px;
+  border-radius: 5px;
+  margin: 4% 5% 4% 5%;
+}
+
 .main__content {
-  background: #01001f;
   padding: 80px;
-  margin-left: -10px;
-  margin-right: -10px;
-  margin-bottom: -80px;
-  margin-top: -80px;
-  padding-bottom: 50px;
-  font-family: 'Rubik', sans-serif;
+  padding-bottom: 0;
+  text-align: left;
+}
+
+.games__turntable {
+  text-align: center;
 }
 
 #profile-pic {
   border-radius: 20px;
   float: left;
   width: 25%;
-  height: 25%;
-  margin: 3% 5%;
-  margin-right: 3%;
+  margin: 2% 4%;
   min-width: 250px;
   max-width: 300px;
-  padding-top: 0;
-  margin-top: 5%;
 }
 
-.main__content h1 {
+.aboutme_content {
+  text-align: left;
+}
+
+.aboutme_content h1 {
   font-size: 40px;
   color: #be5600;
 }
 
-.main__content h2 {
+.aboutme_content h2 {
     font-size: 30px;
     color: #be5600;
     margin-top: -1em;
 }
 
-.main__content p {
+.aboutme_content p {
     font-size: 20px;
-    color: #fff;
     padding-right: 4%;
     padding-left: 4%;
     font-weight: 600;
 }
 
-.games__turntable {
-  text-align: center;
-  padding-top: 50px;
-}
-
 .slideshow-vid {
   border-radius: 20px;
-  width: 75%;
   height: 75%;
   /*min-width: 800px;*/
-  margin: auto;
-  padding: auto;
-  max-width: 1000px;
+  max-width: 1100px;
   width: 100%;
 }
 
@@ -133,38 +132,25 @@ html, body {
   margin-left: -10px;
   margin-right: -10px;
   box-sizing: border-box;
-  font-family: 'Rubik', sans-serif;
-  background-color: #01001f;
 }
 
-section {
-  padding-top: 30px;
-  /*padding-bottom: 80px;*/
-}
-
-.projects__container h1 {
-  color: #fff;
+#projects,
+#resume,
+#aboutme,
+#contact {
   font-size: 2.5rem;
-  text-align: center;
   font-weight: 600;
 }
 
 .projects {
   /*height: 100%;
   whole__project*/
-  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: -80px;
 }
 
-
-#btn_container {
-  margin: 2% 5%;
-  text-align: center;
-  width:100%;
-}
+/*TODO: Drop down menu filter in mobile*/
 
 .filterDiv {
   display: none;
@@ -189,7 +175,6 @@ section {
   text-decoration: none;
   font-weight: 600;
   font-size: x-large;
-  font-family: 'Rubik', sans-serif;
   margin: 5px;
   cursor: pointer;
 }
@@ -206,66 +191,52 @@ section {
 }
 
 
-
-
 /* Projects */
 .service-1 {
-  background-color: rgb(143, 143, 143);
-  width: 320px;
-  padding: 15px;
-  margin: 35px;
-  border-radius: 10px;
+  width: 500px;
+  margin: 15px;
 }
 
-img {
-  height: 170px;
-  width: 100%;
-  padding-top: 30px;
+.container {
+  position: relative;
+  width: 50%;
 }
 
-.textOverlay {
-  text-align: center;
-  transition: .3s ease;
-  opacity: 0;
-  background-color: #ff7300;
+.image {
+  display: block;
+  width: 200%;
+}
+
+.overlay {
   position: absolute;
-  font-size: larger;
-  font-weight: bold;
-  color: black;
-  top: 26.60%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 147%; 
-  width: 320px;
-  padding: 15px;
-  border-radius: 10px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 200%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ff7300;
 }
 
-.textOverlay:hover {
+.container:hover .overlay {
   opacity: 1;
 }
 
-.description {
-  padding-bottom: 30px;
-  position: relative;
+.text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
-  margin-top: 30px;
-  color: #000000;
+  font-size: x-large;
+  font-weight: bold;
 }
 
-.description h2 {
-  font-weight: 900;
-  font-size: 2rem;
-}
-
-.description p {
-  margin-top: 20px;
-  font-size: 1.25rem;
-  font-weight: 500;
-}
 /* end of projects */
 
 /* resume section */
@@ -274,27 +245,11 @@ img {
   margin-left: -10px;
   margin-right: -10px;
   box-sizing: border-box;
-  font-family: 'Rubik', sans-serif;
-  background-color: #01001f;
-}
-
-/* section {
-  /*padding-top: 80px;
-  padding-bottom: 80px;
-} */
-
-.resume__container h1 {
-  font-size: 2.5rem;
-  text-align: center;
-  font-weight: 600;
-  color: #fff;
 }
 
 .resume__paper__container {
   max-width: 900px;
   margin: auto;
-  padding: 5%;
-  padding-top: 50px;
 }
 
 .resume__paper {
@@ -317,13 +272,8 @@ img {
 /* contact form section */
 #contact {
   font-size: 2.5rem;
-  text-align: center;
   font-weight: 600;
-  color: #fff;
   margin: 0;
-  text-align: center;
-  font-family: 'Rubik', sans-serif;
-  background-color: #01001f;
 }
 
 .contact__container {
@@ -333,10 +283,7 @@ img {
   justify-content: center;
   margin: 0;
   box-sizing: border-box;
-  text-align: center;
   display: flex;
-  font-family: 'Rubik', sans-serif;
-  background-color: #01001f;
 }
 
 .contact__container form {
@@ -344,15 +291,12 @@ img {
 }
 
 .contact__info {
-  color: #fff;
-  background-color: #01001f;
 
   /* delete */
   margin-top: 4rem;
 }
 
 .contact__form {
-  background-color: #01001f;
   /*background-color: #ff0000;*/
   width: 100%;
   margin: 0 0 0 6rem;
@@ -362,7 +306,6 @@ img {
 
 label {
   cursor: pointer;
-  color: #fff;
   box-sizing: border-box;
   display: inline-block;
   margin-bottom: 0.2rem;
@@ -378,7 +321,6 @@ input[type="text"] {
   border-bottom: 2px solid rgb(118, 118, 118);
   background-color: rgb(63, 63, 63);
   outline: none;
-  color: #fff;
   padding: 0.4rem 0.8rem;
   margin-bottom: 1.2rem;
 }
@@ -390,10 +332,8 @@ textarea {
   border-bottom: 2px solid rgb(118, 118, 118);
   background-color: rgb(63, 63, 63);
   outline: none;
-  color: #fff;
   padding: 0.4rem 0.8rem;
   margin-bottom: 1.2rem;
-  font-family: 'Rubik', sans-serif;
   resize: none;
   box-sizing: border-box;
   height: 25vh;
@@ -410,7 +350,6 @@ textarea {
   text-decoration: none;
   font-weight: 600;
   font-size: larger;
-  font-family: 'Rubik', sans-serif;
 }
 
 .button:hover {
@@ -433,8 +372,8 @@ textarea {
 
 /* end of contact form section */
 
-@media screen and (max-width: 960px) {
-    .navbar__container {
+@media screen and (max-width: 960px) {  
+  .navbar__container {
         padding: 0;
     }
 
@@ -467,6 +406,7 @@ textarea {
 
     #navbar__logo {
         padding-left: 25px;
+        font-size: 100%;
     }
 
     .navbar__toggle .bar {
@@ -503,15 +443,24 @@ textarea {
 
     .main__content {
       text-align: center;
-      padding-left: 15px;
-      padding-right: 15px;
-      padding-bottom: 100px;
+      padding: 0;
+    }
+
+    .slideshow-vid {
+      width: 85%;
+    }
+
+    .aboutme_content {
+      text-align: center;
+    }
+
+    .aboutme_content p {
+      text-align: left;
     }
 
     #profile-pic {
       margin: auto;
       padding: auto;
-      padding-top: 15px;
       float: none;
       min-width: 250px;
     }
@@ -520,12 +469,20 @@ textarea {
       text-align: left;
     }
 
-    #projects {
+    #projects,
+    #resume {
       margin-bottom: 0;
     }
     
     .projects {
       margin-top: 0;
+    }
+
+    .service-1 {
+      width: 75%;
+      margin: 15px;
+      margin-left:auto;
+      margin-right: auto;
     }
 
     section {
@@ -535,10 +492,6 @@ textarea {
     .resume__paper__container {
       padding: 0;
       height: 60px;
-    }
-
-    #resume {
-      margin-bottom: 0;
     }
 
     .resume__container {
@@ -557,12 +510,6 @@ textarea {
       top: auto;
       text-align: center;
     }
-
-
-
-
-
-
 
     #contact {
       padding-top: 20px;

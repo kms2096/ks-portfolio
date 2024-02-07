@@ -21,13 +21,11 @@
     <body>
       <!-- TODO: Add header and footer to game pages -->
       <!--TODO: Make the nav bar stick to the top instead of disappearing when scrolling-->
-      <!-- TODO: Get rid of the text overlay, don't need it with the filters -->
-      <!-- Testing git source control -->
       <header>
         <!-- nav bar -->
         <nav class="navbar">
           <div class="navbar__container">
-            <a href="https://kms2096.github.io/ks-portfolio/" id="navbar__logo">Katherine Stein</a>
+            <a href="https://kms2096.github.io/ks-portfolio/" id="navbar__logo">Katherine Stein - Game Designer and Developer</a>
             <div class="navbar__toggle" id="mobile-menu">
               <span class="bar"></span>
               <span class="bar"></span>
@@ -35,13 +33,13 @@
             </div>
             <ul class="navbar__menu">
               <li class="navbar__item">
-                <a href="https://kms2096.github.io/ks-portfolio/" class="navbar__links">About Me</a>
+                <a href="#aboutme" class="navbar__links">About Me</a>
               </li>
               <li class="navbar__item">
-                <a href="https://kms2096.github.io/ks-portfolio/#projects" class="navbar__links">Projects</a>
+                <a href="#projects" class="navbar__links">Projects</a>
               </li>
               <li class="navbar__item">
-                <a href="https://kms2096.github.io/ks-portfolio/#resume" class="navbar__links">Resume</a>
+                <a href="#resume" class="navbar__links">Resume</a>
               </li>
               <li class="navbar__item">
                 <a href="#contact" class="navbar__links">Contact</a>
@@ -51,21 +49,13 @@
         </nav>
         <script src="app.js"></script>
       </header>
-        <!-- about me -->
         <section class="main">
           <div class="main__content">
-            <img src="images/profile.jpg" alt="Picture of Katherine Stein" id="profile-pic">
-            <h1>Katherine Stein</h1>
-            <h2>Game Designer and Developer</h2>
-            <p>I am a fourth-year Game Design and Development major at RIT. I have proficiency in C#, C, and C++, with a solid understanding of Python, Java, Javascript, HTML, and CSS. I am also comfortable using Unity, Unreal Engines 4 and 5, MonoGame, Visual Studio, and Visual Studio Code. Although I have practice with and understanding of level design, web development, AI, and animation, I prefer to focus on the programming aspect of video games. I am very interested in gameplay, and I like making the player movement and controls as fluid and responsive as possible. I like following through, taking ideas, developing them into full-fledged games and find satisfaction in solving problems and learning how things work. In my free time, I enjoy watching video game documentaries and GDC talks. Although I am self-motivated, I prefer working in a team environment, so I can get feedback on how to make my code as efficient and clean as possible.<br><br>Growing up with the Nintendo Wii, DS, and Original Xbox, I loved video games from a young age. I was also very curious as a child and I would take apart electronics with my Dad to see how they work. Even now, I like to find broken consoles or broken electronics and figure out how to fix them myself. I have always enjoyed learning new things and have taught myself how to use Unity, to play guitar and ukulele, and even some programming. I first became interested in the development of video games while on a college break. During this I played two games that changed my perspective from escapist fun to a form of art. Soon after, I submitted my application to RIT for Game Design and Development and found a love for programming and creating experiences for other people to enjoy.</p>
-
             <!--HIGHLIGHT REEL-->
             <div class="games__turntable">
-              <!--a href="#projects"-->
                 <video class="slideshow-vid" autoplay muted loop>
                   <source src="videos/Gameplay2024.mp4">
                 </video>
-              <!--/a-->
             </div>
           </div>
         </section>
@@ -104,86 +94,70 @@
                 </script>
                 <!--TODO: move Wyrdsong to someplace other than projects?? Keep it just with tags?? -->
                 <!-- Wyrdsong -->
-                <a href="Wyrdsong.html" style="text-decoration: none;" target="_self">
-                  <div class="filterDiv C++ Games Internship">
-                    <div class="service-1">
-                      <div class="img">
-                        <img src="images/Wyrdsong.jpg" alt="Wyrdsong - By the power of truth">
-                      </div>
-                      <div class="description">
-                        <!--TODO: add another line -->
-                          <h2>Wyrdsong</h2>
-                          <p>Wyrdsong is the new AAA open world preternatural RPG from Something Wicked Games, a new, globally dispersed AAA games studio led by Jeff Gardiner, a 15-year veteran of Bethesda (Skyrim, Fallout 3/4/76) and co-founder, Charles Staples (The Outer Worlds, Fallout NV), with creative and technical lead talent from Obsidian Entertainment, Bioware, and Bethesda. For more information on Something Wicked Games and updates to Wyrdsong, please visit www.somethingwickedgames.com.</p>
-                          <!-- <div class="textOverlay">Current Project<br><br>Unreal Engine<br>C++</div> -->
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                <!-- Project Mars -->
-                <!--a href="" style="text-decoration: none;" target="_self">
-                  <div class="filterDiv CurrentProject C++ Games ClassProject GroupProject">
-                    <div class="service-1">
-                      <div class="img">
-                        <img src="images/NASA.jpg" alt="NASA logo">
-                      </div>
-                      <div class="description">
-                          <h2>Project MARS</h2>
-                          <p>Extended space travel places significant physical challenges and demands on astronauts. This team will work with a NASA client to develop Intelligent Devices/Equipment/Instruments (IDEI) that can help maintain Crew Health and Performance (CHP) for crews living on Mars for extended periods of time. The team will integrate gamification and autonomous, wearable monitoring devices to aid in performance-based training and assessment of astronaut performance on Earth and during missions.</p>
-                          <!-- <div class="textOverlay">Current Project<br><br>Unreal Engine<br>C++</div> >
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                <!-- Graphics Engine -->
-                <a href="GraphicsEngine.html" style="text-decoration: none;" target="_self">
-                  <div class="filterDiv CurrentProject C++ Non-Games ClassProject SoloProject">
-                    <div class="service-1">
-                      <div class="img">
-                        <img src="images/GGP_Cobblestone.png" alt="Graphics Engine running">
-                      </div>
-                      <div class="description">
-                          <h2>Graphics Engine</h2>
-                          <p>Students will explore the use of a graphics API to access hardware-accelerated graphics in a real-time graphics engine context. The course will involve discussion of scene graphs, optimizations, and integration with the API object structure, as well as input schemes, content pipelines, and 2D and 3D rendering techniques. Students will explore the advanced use of the API calls to construct environments capable of real-time performance. Students will construct from scratch a graphics engine with library construction.</p>
-                          <!-- <div class="textOverlay">Current Project<br><br>C++</div> -->
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                <!-- A.R.C.A.N.A. -->
-                <a href="Arcana.html" style="text-decoration: none;" target="_self">
-                  <div class="filterDiv C# Games ClassProject GroupProject">
-                    <div class="service-1">
-                      <div class="img">
-                        <img src="images/Arcana/A_Title.png" alt="Potions room in A.R.C.A.N.A.">
-                      </div>
-                      <div class="description">
-                          <h2>A.R.C.A.N.A.</h2>
-                          <p>You and a friend are the apprentices of a powerful Archmage trying to learn magic. A note comes in from him saying he is in trouble! After reading the note, the entire lab shook and one of the apprentices was thrown through a portal into the Archmage’s study. It seemed the Archmage used some of his remaining power to create that portal so you could have access to all of his notes. You two will need to communicate together to solve the problems ahead without knowing what the other player is looking at.</p>
-                          <!-- <div class="textOverlay">Unity<br>C#</div> -->
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              <!-- High Noon -->
-              <a href="HighNoon.html" style="text-decoration: none;" target="_self">
-                <div class="filterDiv C# Games ClassProject SoloProject">
+                <div class="filterDiv C++ Games Internship GroupProject">
                   <div class="service-1">
-                    <div class="img">
-                      <img src="images/HighNoon/HN_Title.png" alt="Title screen in High Noon">
-                    </div>
-                    <div class="description">
-                      <h2>High Noon</h2>
-                      <p>Big trouble comes riding in when a rival gang tries to take over what is left of a small Western town. 
-                        Once a thriving settlement, the gang has scared everyone off of the streets. You are the only one brave 
-                        enough to come out of hiding and challenge them. Take your stand at the center of the town and defend 
-                        it against the onslaught of invaders such as the tank-like Coffin or the trigger-happy Cactus. Survive 
-                        the wild west and be the last one standing. Can the people count on you to bring order and peace back 
-                        to their quaint town?</p>
-                      <!-- <div class="textOverlay">Unity<br>C#</div> -->
-                    </div>
+                    <a href="Wyrdsong.html" style="text-decoration: none;" target="_self">
+                      <div class="container">
+                        <img src="gif/WS_gif2.gif" alt="Clip from Wyrdsong trailer" class="image">
+                        <div class="overlay">
+                          <div class="text">Wyrdsong<br><br>Team Size: 30 - 50<br>Timeline: 3 months</div>
+                        </div>
+                      </div>
+                    </a>
                   </div>
                 </div>
-              </a>
+                <!-- Graphics Engine -->
+                <div class="filterDiv C++ Non-Games ClassProject SoloProject">
+                  <div class="service-1">
+                    <a href="GraphicsEngine.html" style="text-decoration: none;" target="_self">
+                      <div class="container">
+                        <img src="gif/GGP_gif.gif" alt="Graphics engine features" class="image">
+                        <div class="overlay">
+                          <div class="text">Graphics Engine<br><br>Team Size: 1<br>Timeline: 4 months</div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- Musical Deck Builder -->
+                <div class="filterDiv CurrentProject C++ Games ClassProject GroupProject">
+                  <div class="service-1">
+                    <a href="" style="text-decoration: none;" target="_self">
+                      <div class="container">
+                        <img src="gif/DB_gif.gif" alt="Deck Builder showing cards" class="image">
+                        <div class="overlay">
+                          <div class="text">Musical Deck Builder<br><br>Team Size: 3<br>Timeline: Jan 2024 - Present</div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- A.R.C.A.N.A. -->
+                <div class="filterDiv C# Games ClassProject GroupProject">
+                  <div class="service-1">
+                    <a href="Arcana.html" style="text-decoration: none;" target="_self">
+                      <div class="container">
+                        <img src="gif/Arcana_gif.gif" alt="Gameplay from Arcana" class="image">
+                        <div class="overlay">
+                          <div class="text">A.R.C.A.N.A<br><br>Team Size: 5<br>Timeline: 1 month</div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              <!-- High Noon -->
+              <div class="filterDiv C# Games ClassProject SoloProject">
+                <div class="service-1">
+                  <a href="HighNoon.html" style="text-decoration: none;" target="_self">
+                    <div class="container">
+                      <img src="gif/HN_gif.gif" alt="High Noon Gameplay" class="image">
+                      <div class="overlay">
+                        <div class="text">High Noon<br><br>Team Size: 1<br>Timeline: 1 month</div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
               <!-- A Tigers' Tale -->
               <!--a href="TigerTale.html" style="text-decoration: none;" target="_self">
                 <div class="service-1">
@@ -200,46 +174,33 @@
                       1829 to 1968.</p>
                   </div>
                 </div-->  
+
               <!-- Niraya -->
-              <a href="Niraya.html" style="text-decoration: none;" target="_self">
-                <div class="filterDiv C# Games ClassProject GroupProject">
-                  <div class="service-1">
-                    <div class="img">
-                      <img src="images/Niraya/N_dual.png" alt="Niraya overworld and underworld">
+              <div class="filterDiv C# Games ClassProject GroupProject">
+                <div class="service-1">
+                  <a href="Niraya.html" style="text-decoration: none;" target="_self">
+                    <div class="container">
+                      <img src="gif/Niraya_gif.gif" alt="Niraya overworld and underworld" class="image">
+                      <div class="overlay">
+                        <div class="text">Niraya<br><br>Team Size: 4<br>Timeline: 4 months</div>
+                      </div>
                     </div>
-                    <div class="description">
-                      <h2>Niraya</h2>
-                      <p>In this 2D hack and slash platformer, you play as a fierce warrior that has to fight her way 
-                        through a dangerous forest filled with monsters in order to rescue her pet dog. Core gameplay 
-                        elements include jumping, attacking, dashing through enemies and death. Should you perish, 
-                        you get one more chance to get to your dog before having to start over. Once you die, the 
-                        world changes around you, the forest gets darker, and previously killed enemies come back 
-                        in the form of skeletons.</p>
-                      <!-- <div class="textOverlay">MonoGame<br>C#</div> -->
-                    </div>
-                  </div>
+                  </a>
                 </div>
-              </a>
+              </div>
               <!-- Space Action Hero -->
-              <a href="SpaceActionHero.html" style="text-decoration: none;" target="_self">
-                <div class="filterDiv C# Games SoloProject">
-                  <div class="service-1">
-                    <div class="img">
-                      <img src="images/SpaceActionHero/SAH_Main.png" alt="Space Shooter gameplay">
+              <div class="filterDiv C# Games SoloProject">
+                <div class="service-1">
+                  <a href="SpaceActionHero.html" style="text-decoration: none;" target="_self">
+                    <div class="container">
+                      <img src="gif/SAH_gif.gif" alt="Space Action Hero Gameplay" class="image">
+                      <div class="overlay">
+                        <div class="text">Space Action Hero<br><br>Team Size: 1<br>Timeline: 1 month</div>
+                      </div>
                     </div>
-                    <div class="description">
-                      <h2>Space Action Hero</h2>
-                      <p>Space Action Hero is a 2D sci-fi space shooter where you control a spaceship flying through space 
-                        and battling enemy spaceships. Free the galaxy from the threat of the invading forces and usher in 
-                        a new era of peace. Gameplay includes firing and dodging projectiles, meteors, and enemy ships. 
-                        Destroy enemies to gain power-ups including speed boosts, increase your fire power to a double shot, 
-                        and shields. Fight your way through levels and waves to get to the boss battle at the end that has 
-                        several phases.</p>
-                      <!-- <div class="textOverlay">Unity<br>C#</div> -->
-                    </div>
-                  </div>
+                  </a>
                 </div>
-              </a>
+              </div>
               <!-- project 3 >
               <a href="Shooter.html" style="text-decoration: none;" target="_self">
                 <div class="filterDiv CurrentProject C++ Games SoloProjects">
@@ -277,37 +238,31 @@
                 </div>
               </a-->
               <!-- Willow's Mansion -->
-              <a href="WillowsMansion.html" style="text-decoration: none;" target="_self">
-                <div class="filterDiv C# Games GameJam GroupProject">
-                  <div class="service-1">
-                    <div class="img">
-                      <img src="images/WM_GamePlay.jpg" alt="Gameplay of Willow’s Mansion">
+              <div class="filterDiv C# Games GameJam GroupProject">
+                <div class="service-1">
+                  <a href="WillowsMansion.html" style="text-decoration: none;" target="_self">
+                    <div class="container">
+                      <img src="images/WM_GamePlay.jpg" alt="Gameplay screenshot of game" class="image">
+                      <div class="overlay">
+                        <div class="text">Willow's Mansion<br><br>Team Size: 6<br>Timeline: 2 days</div>
+                      </div>
                     </div>
-                    <div class="description">
-                      <h2>Willow's Mansion</h2>
-                      <p>In Willow's Mansion, you embody the spirit of Willow, a child who was murdered. Once a kindred spirit regarded warmly by the local townspeople, a traveling party of ghost hunters inadvertently welcomed all sorts of evil into the mansion Willow haunts. You now must use her powers to guide the characters to artifacts that hold the key to Willow’s power while keeping them out of harm’s way. Be careful not to go too far though! Should the adventurers become spooked, they will flee, leaving Willow with no means to purge the evil spirits.</p>
-                        <!-- <div class="textOverlay">Unity<br>C#<br>Game Jam
-                        </div> -->
-                    </div>
-                  </div>
+                  </a>
                 </div>
-              </a>
+              </div>
               <!-- Japan Game Jam -->
-              <a href="" style="text-decoration: none;" target="_self">
-                <div class="filterDiv C# Games GameJam GroupProject">
-                  <div class="service-1">
-                    <div class="img">
-                      <img src="images/HeroDuo/HD_Title.png" alt="Title screen for Hero Duo">
+              <div class="filterDiv C# Games GameJam GroupProject">
+                <div class="service-1">
+                  <a href="" style="text-decoration: none;" target="_self">
+                    <div class="container">
+                      <img src="images/HeroDuo/HD_Title.png" alt="Title image of Hero Duo" class="image">
+                      <div class="overlay">
+                        <div class="text">Hero Duo<br><br>Team Size: 6<br>Timeline: 1 day</div>
+                      </div>
                     </div>
-                    <div class="description">
-                      <h2>Hero Duo</h2>
-                      <p>Hero Duo is a 2D shoot 'em up made in collaboration with the students from Kyoto Computer Gakuin during a 24 hour game jam. In Hero Duo, you can switch between two playable characters - Taro and Eagle - to defeat the legendary Godfoot, a combination of Godzilla and Bigfoot. The background is filled with scenery from Japan and the United States, such as Mt. Fuji with a piece of sushi on top, and the Statue of Liberty with a hamburger in place of the torch. This game was a fun combination of our cultures.</p>
-                        <!-- <div class="textOverlay">Unity<br>C#<br>Game Jam
-                        </div> -->
-                    </div>
-                  </div>
+                  </a>
                 </div>
-              </a>
+              </div>
               </div>
             </section>
         </div>
@@ -326,6 +281,7 @@
           }
         </script>
       <!-- end of projects -->
+      <hr>
       <!-- resume section 
       src="kms-resume_pdf.pdf#zoom=100% class ="resume__paper" height="100%" width="100%"></iframe>-->
         <div class="resume__container">
@@ -340,7 +296,19 @@
           </section>
         </div>
       <!-- end of resume -->
+      <hr>
+      <!-- about me -->
+      <section class="aboutme">
+        <h1 id="aboutme">About Me</h1>
+        <div class="aboutme_content">
+          <img src="images/profile.jpg" alt="Picture of Katherine Stein" id="profile-pic">
+          <h1>Katherine Stein</h1>
+          <h2>Game Designer and Developer</h2>
+          <p>I am a fourth-year Game Design and Development major at RIT. I have proficiency in C#, C, and C++, with a solid understanding of Python, Java, Javascript, HTML, and CSS. I am also comfortable using Unity, Unreal Engines 4 and 5, MonoGame, Visual Studio, and Visual Studio Code. Although I have practice with and understanding of level design, web development, AI, and animation, I prefer to focus on the programming aspect of video games. I am very interested in gameplay, and I like making the player movement and controls as fluid and responsive as possible. I like following through, taking ideas, developing them into full-fledged games and find satisfaction in solving problems and learning how things work. In my free time, I enjoy watching video game documentaries and GDC talks. Although I am self-motivated, I prefer working in a team environment, so I can get feedback on how to make my code as efficient and clean as possible.<br><br>Growing up with the Nintendo Wii, DS, and Original Xbox, I loved video games from a young age. I was also very curious as a child and I would take apart electronics with my Dad to see how they work. Even now, I like to find broken consoles or broken electronics and figure out how to fix them myself. I have always enjoyed learning new things and have taught myself how to use Unity, to play guitar and ukulele, and even some programming. I first became interested in the development of video games while on a college break. During this I played two games that changed my perspective from escapist fun to a form of art. Soon after, I submitted my application to RIT for Game Design and Development and found a love for programming and creating experiences for other people to enjoy.</p>
+        </div>
+      </section>
       <footer>
+        <hr>
         <!-- contact me -->
         <h1 id="contact">Contact Me</h1>
         <div class="contact__container">
