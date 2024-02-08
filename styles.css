@@ -28,15 +28,12 @@ html, body {
     display: flex;
     justify-content: space-between;
     height: 50px;
-    z-index: 1;
     width: 100%;
-    margin: 0 auto;
     padding: 0 50px;
 }
 
 #navbar__logo {
     color: #be5600;
-    background-size: 100%;
     font-weight: 600;
     display: flex;
     align-items: center;
@@ -47,20 +44,20 @@ html, body {
 
 .navbar__menu {
     display: flex;
-    align-items: center;
+    /*align-items: center;
+    text-align: center;*/
     list-style: none;
-    text-align: center;
 }
 
 .navbar__links {
     color: #fff;
-    font-weight: 500;
+    /*font-weight: 500;
     display: flex;
-    align-items: center;
+    align-items: center;*/
     text-decoration: none;
-    justify-content: center;
+    /*justify-content: center;*/
     padding: 0 1.5rem;
-    height: 100%;
+    /*height: 100%;*/
     font-size: 25px;
 }
 
@@ -106,16 +103,16 @@ hr {
 }
 
 .aboutme_content h2 {
-    font-size: 30px;
-    color: #be5600;
-    margin-top: -1em;
+  font-size: 30px;
+  color: #be5600;
+  margin-top: -1em;
 }
 
 .aboutme_content p {
-    font-size: 20px;
-    padding-right: 4%;
-    padding-left: 4%;
-    font-weight: 600;
+  font-size: 20px;
+  padding-right: 4%;
+  padding-left: 4%;
+  font-weight: 600;
 }
 
 .slideshow-vid {
