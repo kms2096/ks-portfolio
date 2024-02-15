@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Space Action Hero</title>
+        <title>Welcome Home</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Need to configure this">
-        <link rel="stylesheet" href="updatedGamePage.css">
+        <!--link rel="stylesheet" href="SpaceActionHero.css"-->
+        <link rel="stylesheet" href="../gamepages.css">
         <!--link rel="title" href="images/NirayaTitle.png"-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,10 +51,7 @@
                     <div class="main__content">
                         <div class="img">
                             <div class="games__turntable">
-                                <img class="slideshow" src="images/SpaceActionHero/SAH_Title.png" alt="Space Shooter title screen">
-                                <img class="slideshow" src="images/SpaceActionHero/SAH_Main.png" alt="Space Shooter gameplay">
-                                <img class="slideshow" src="images/SpaceActionHero/SAH_Boss.png" alt="Space Shooter boss battle">
-                                <img class="slideshow" src="images/SpaceActionHero/SAH_Explode.png" alt="Space Shooter ship with shield">
+                                <img src="../images/WelcomeHomeTitle.png" alt="Image of Welcome Home game" id="slideshow-img">
                             </div>
                             <script>
                                 var myIndex = 0;
@@ -72,42 +70,45 @@
                                 }
                             </script>
                         </div>
-                        <h1>Space Action Hero</h1>
+                        <h1>Welcome Home</h1>
                         <div class="project__desc">
                             <div class="quicklook">
-                                <h3>Time frame: June 2022</h3>
-                                <h3>Role: Gameplay Developer, Animator, Designer, UI and Audio</h3>
+                                <h3>Time frame: November 2021</h3>
+                                <h3>Role: Programming and Narrative Design</h3>
                                 <h3>Tools: Unity and Visual Studio</h3>
                                 <h3>Languages: C#</h3>
-                                <h3>Team: Katherine Stein</h3><br>
+                                <h3>Team: Jabrecia Washington, Katherine Stein, Jessica Niem</h3><br>
                             </div>
                             <h2>Description:</h2>
-                            <p>Space Action Hero is a 2D sci-fi space shooter where you control a spaceship flying through space and battling enemy spaceships. Free the galaxy from the threat of the invading forces and usher in a new era of peace. Gameplay includes firing and dodging projectiles, meteors, and enemy ships. Destroy enemies to gain power-ups including speed boosts, increase your fire power to a double shot, and shields. Fight your way through levels and waves to get to the boss battle at the end that has several phases.</p><br>
+                            <p>You are home for the summer and your parents are out of town for the weekend so decide to throw a welcome home party for college students. Things did not get THAT out of hand as you recall. Until your alarm begins to go off the next day and you see a text message, your parents are on their way back from the airport! Get rid of the evidence of the best night of your life. Rush around between rooms and clean up the messes left behind by partygoers and be prepared to welcome your parents home.      </p><br>
         
                             <h2>Development:</h2>
-                            <p>I started and finished Space Action Hero during June of 2022 in an attempt to learn Unity by participating in a course on Udemy. Through this course, I learned how to add power-ups, create phases of a boss battle, animate sprites, add music and audio effects, UI, and taking advantage of Unity's particle effect system.
+                            <p>Development on this game was started after signing up for the Technica 2021 hackathon with two other friends. The theme for the hackathon was "Welcome Home." At this point I had virtually no experience with working in a collaborative setting and only a few months working in C#. This hackathon took place over the course of 24 hours. One of the things I worked on was player movement, I also took the drawings of the house and made them into a level including adding obstacles and piecing the rooms together. I also added the ability to move between rooms.
                             </p><br>
         
                             <h2>Challenges:</h2>
-                            <p>One of the biggest challenges I had during the development of this game was the animation system. I had an issue animating the boss specifically where it would skip the first phase of the boss battle. After retracing my steps, I noticed that I put the animation instance on the wrong part of the boss's body, and simply had to make a single instance of the boss and it's shell before assigning the animator to the singular instance. Regardless of the bumps I encountered while trying to animate the boss, one of the things I was most excited about learning more about animation and connecting it to gameplay. Since I am mostly a programmer, animation and art is not my strongest area. 
+                            <p>The first challenge we ran into was figuring out how to use Unity as a team, being able to pull each other's changes and everyone staying up to date proved to be a challenge initially. Once we figured this out, the next problem I ran into was moving the character between rooms. My original code checked the character's position and checked if it matched the collider for the door. This did not work since the coordinates of the character were in the center of the sprite, so the character would never trigger the collider. After talking to my team members, we figured out that we needed to check the X and Y coordinates and add the character's radius to it. Once we added the radius to the coordinates, we were able to change rooms.
                             </p><br>
                             
                             <h2>What went well:</h2>
-                            <p>One of the things I thought went very well was keeping to a schedule in order to finish the game in a timely manner. I was able to stay motivated even when I hit walls like the animation bug.</p>
+                            <p>This was a good first experience working in a group, since everyone was working together and helped each other when there were problems. Working in a group together was one of the best experiences I have had. Even though we did not win, I thoroughly enjoyed working together with my friends and making something at the end on the day.</p>
                         <!-- 
                         what would i do better
                         
+                        video
+                        more screenshots
+                        play game
                         link to github/code
                         -->
-                            
-                        <div class="project__link">
-                            <a href="https://kms2096.github.io/SpaceShooter/" target="blank" class="button">Play</a>
-                        </div>
                         </div>   
+                        <!--div class="project__link">
+                            <a href="https://drive.google.com/" class="button">Download and Play</a>
+                        </div-->
                     </div> 
             </section>
             </div>     
         </div>
+        <!--/div-->
         <footer>
             <!-- contact me -->
             <h1 id="contact">Contact Me</h1>

@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Unnamed Third Person Shooter</title>
+        <title>Space Action Hero</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Need to configure this">
-        <link rel="stylesheet" href="updatedGamePage.css">
+        <link rel="stylesheet" href="../updatedGamePage.css">
+        <link rel="stylesheet" href="../styles.css">
+        <!--link rel="title" href="images/NirayaTitle.png"-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
@@ -17,29 +19,29 @@
             <!-- nav bar -->
             <nav class="navbar">
                 <div class="navbar__container">
-                    <a href="https://kms2096.github.io/ks-portfolio/" id="navbar__logo">Katherine Stein</a>
-                    <div class="navbar__toggle" id="mobile-menu">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </div>
-                    <ul class="navbar__menu">
-                        <li class="navbar__item">
-                            <a href="https://kms2096.github.io/ks-portfolio/" class="navbar__links">About Me</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="https://kms2096.github.io/ks-portfolio/#projects" class="navbar__links">Projects</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="https://kms2096.github.io/ks-portfolio/#resume" class="navbar__links">Resume</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#contact" class="navbar__links">Contact</a>
-                        </li>
-                    </ul>
+                <a href="https://kms2096.github.io/ks-portfolio/" id="navbar__logo">Katherine Stein - Game Designer and Developer</a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                    <a href="https://kms2096.github.io/ks-portfolio/#projects" class="navbar__links">Projects</a>
+                    </li>
+                    <li class="navbar__item">
+                    <a href="https://kms2096.github.io/ks-portfolio/#resume" class="navbar__links">Resume</a>
+                    </li>
+                    <li class="navbar__item">
+                    <a href="https://kms2096.github.io/ks-portfolio/#aboutme" class="navbar__links">About</a>
+                    </li>
+                    <li class="navbar__item">
+                    <a href="#contact" class="navbar__links">Contact</a>
+                    </li>
+                </ul>
                 </div>
             </nav>
-            <script src="app.js"></script>
+            <script src="../app.js"></script>
         </header>
         <script src="app.js"></script>
         <!---->
@@ -49,7 +51,10 @@
                     <div class="main__content">
                         <div class="img">
                             <div class="games__turntable">
-                                <img class="slideshow" src="images/Shooter.png" alt="Image of Shooter made in Unreal Engine 4" id="slideshow-img">
+                                <img class="slideshow" src="../images/SpaceActionHero/SAH_Title.png" alt="Space Shooter title screen">
+                                <img class="slideshow" src="../images/SpaceActionHero/SAH_Main.png" alt="Space Shooter gameplay">
+                                <img class="slideshow" src="../images/SpaceActionHero/SAH_Boss.png" alt="Space Shooter boss battle">
+                                <img class="slideshow" src="../images/SpaceActionHero/SAH_Explode.png" alt="Space Shooter ship with shield">
                             </div>
                             <script>
                                 var myIndex = 0;
@@ -68,48 +73,42 @@
                                 }
                             </script>
                         </div>
-                        <h1>Unnamed Third Person Shooter</h1>
+                        <h1>Space Action Hero</h1>
                         <div class="project__desc">
                             <div class="quicklook">
-                                <h3>Time frame: July 2022 - Present</h3>
+                                <h3>Time frame: June 2022</h3>
                                 <h3>Role: Gameplay Developer, Animator, Designer, UI and Audio</h3>
-                                <h3>Tools: Unreal Engine 4 and Visual Studio</h3>
-                                <h3>Languages: C++ and Blueprints scripting</h3>
+                                <h3>Tools: Unity and Visual Studio</h3>
+                                <h3>Languages: C#</h3>
                                 <h3>Team: Katherine Stein</h3><br>
                             </div>
                             <h2>Description:</h2>
-                            <p>I am currently working on this third person shooter in Unreal Engine 4. I still have to work on the enemies, levels, health, and weapons. From this project, I have gained a basic understanding of Blueprints and blend spaces. I have finalized the animations for the main character and worked on the starter weapon. Including particle effects firing and on impact, recoil animations, beam particles, zoom in when aiming, and aiming towards the crosshair in the center of the screen. I have also implemented controls for both keyboard and controllers inputs.</p><br>
+                            <p>Space Action Hero is a 2D sci-fi space shooter where you control a spaceship flying through space and battling enemy spaceships. Free the galaxy from the threat of the invading forces and usher in a new era of peace. Gameplay includes firing and dodging projectiles, meteors, and enemy ships. Destroy enemies to gain power-ups including speed boosts, increase your fire power to a double shot, and shields. Fight your way through levels and waves to get to the boss battle at the end that has several phases.</p><br>
         
                             <h2>Development:</h2>
-                            <p>I started this shooter game in July 2022 in an effort to learn Unreal Engine. After being unable to find thorough enough courses on Youtube I chose to take an Unreal Course on Udemy. So far I have completed topics such as: animation particularly in a 3D environment, using blend Spaces to handle diagonal movements, combining animations like the top animation recoiling when firing a weapon and the bottom still be controlled by the player. Even though I do not call myself an animator, so far this has been one of my favorite aspects when developing this game. I really enjoyed trimming the animations, blending them together to get more movement, and getting the top and bottom animations to be different. 
+                            <p>I started and finished Space Action Hero during June of 2022 in an attempt to learn Unity by participating in a course on Udemy. Through this course, I learned how to add power-ups, create phases of a boss battle, animate sprites, add music and audio effects, UI, and taking advantage of Unity's particle effect system.
                             </p><br>
         
                             <h2>Challenges:</h2>
-                            <p>I originally started this project on Unreal Engine 5 but after completing the main character's animation blend Space, my computer continued to lag and run slowly. After reading that Unreal Engine 4 ran smoother due to more optimization, I decided to give that a try instead causing me to restart the entire project from scratch. Although it was a giant
-                            pain, it was the right choice overall. Another problem I ran into was the controller not moving the character at all. After looking into project settings, making sure that the game mode was properly overridden, and that the code was 
-                            correct, I found that the issue was in the Blueprints where "Auto Possess Character" was off. Once I turned that on and set it to zero, my character had full mobility. An issue I am still currently working on fixing is the muzzle flash particle effects. They are currently programmed to show up at the end of the weapon and they do, until the character moves. Then the flash can sometimes begin by appearing from somewhere other than the barrel of the gun.
+                            <p>One of the biggest challenges I had during the development of this game was the animation system. I had an issue animating the boss specifically where it would skip the first phase of the boss battle. After retracing my steps, I noticed that I put the animation instance on the wrong part of the boss's body, and simply had to make a single instance of the boss and it's shell before assigning the animator to the singular instance. Regardless of the bumps I encountered while trying to animate the boss, one of the things I was most excited about learning more about animation and connecting it to gameplay. Since I am mostly a programmer, animation and art is not my strongest area. 
                             </p><br>
                             
-                            <!--h2>What went well:</h2>
-                            <p>_______________________</p-->
+                            <h2>What went well:</h2>
+                            <p>One of the things I thought went very well was keeping to a schedule in order to finish the game in a timely manner. I was able to stay motivated even when I hit walls like the animation bug.</p>
                         <!-- 
-                        what went well
                         what would i do better
                         
-                        video
-                        more screenshots
-                        play game
                         link to github/code
                         -->
+                            
+                        <div class="project__link">
+                            <a href="https://kms2096.github.io/SpaceShooter/" target="blank" class="button">Play</a>
+                        </div>
                         </div>   
-                        <!--div class="project__link">
-                            <a href="https://drive.google.com/" class="button">Download and Play</a>
-                        </div-->
                     </div> 
             </section>
             </div>     
         </div>
-        <!--/div-->
         <footer>
             <!-- contact me -->
             <h1 id="contact">Contact Me</h1>
