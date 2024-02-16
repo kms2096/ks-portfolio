@@ -216,7 +216,7 @@ hr {
   right: 0;
   height: 100%;
   width: 200%;
-  opacity: 0;
+  /*opacity: 0;*/
   transition: .5s ease;
   background-color: #ff7300;
 }
@@ -371,6 +371,10 @@ textarea {
   .service-1 {
     max-width: 50%;
   }
+
+  .text {
+    font-size: 75%;
+  }
 }
 
 @media screen and (max-width: 550px) and (min-width: 451px) {
@@ -395,6 +399,7 @@ textarea {
         opacity: 0; 
         transition: all 0.75s ease;
         justify-content: unset;
+        background-color: #000000;
     }
 
     /* drop down menu */
@@ -405,6 +410,8 @@ textarea {
         z-index: 99;
         padding: 0;
     }
+
+    /*TODO: drop down menu now note black
 
     /* drop sown text */
     .navbar__links {
