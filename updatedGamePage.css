@@ -1,10 +1,6 @@
 /* project section */
 .main__container {
-    padding: 0;
-    margin-left: -10px;
-    margin-right: -10px;
     box-sizing: border-box;
-    background-color: #01001f;
     text-align: center;
 }
 
@@ -17,7 +13,6 @@ h1 {
     font-size: 4rem;
     /*color: #aa4d00;*/
     padding-left: 80px;
-    color: black;
     margin-bottom: 20px;
     margin-top: 10px;
     color: #ff7300;
@@ -134,97 +129,9 @@ h2 {
 
   /* contact form section */
 #contact {
-    font-size: 2.5rem;
+    color: white;
     text-align: center;
-    font-weight: 600;
-    color: #fff;
-    margin: 0;
     padding: 0;
-    text-align: center;
-    background-color: #01001f;
-}
-
-.contact__container {
-    /*margin-left: -10px;
-    margin-right: -10px;*/
-    height: 650px;
-    justify-content: center;
-    margin: 0;
-    box-sizing: border-box;
-    text-align: center;
-    display: flex;
-    background-color: #01001f;
-}
-
-.contact__container form {
-    width: 100%;
-}
-
-.contact__info {
-    color: #fff;
-    background-color: #01001f;
-
-    /* delete */
-    margin-top: 4rem;
-}
-
-.contact__form {
-    background-color: #01001f;
-    /*background-color: #ff0000;*/
-    width: 100%;
-    margin: 0 0 0 6rem;
-    min-width: 300px;
-    text-align: left;
-}
-
-label {
-    cursor: pointer;
-    color: #fff;
-    box-sizing: border-box;
-    display: inline-block;
-    margin-bottom: 0.2rem;
-    font-weight: 500;
-    font-size: large;
-}
-
-input[type="text"] {
-    width: 100%;
-    box-sizing: border-box;
-    border-radius: 0.5rem;
-    border: none;
-    border-bottom: 2px solid rgb(118, 118, 118);
-    background-color: rgb(63, 63, 63);
-    outline: none;
-    color: #fff;
-    padding: 0.4rem 0.8rem;
-    margin-bottom: 1.2rem;
-}
-
-textarea {
-    width: 100%;
-    border-radius: 0.5rem;
-    border: none;
-    border-bottom: 2px solid rgb(118, 118, 118);
-    background-color: rgb(63, 63, 63);
-    outline: none;
-    color: #fff;
-    padding: 0.4rem 0.8rem;
-    margin-bottom: 1.2rem;
-    resize: none;
-    box-sizing: border-box;
-    height: 25vh;
-}
-
-.icon {
-    color: #ff7300;
-    font-size: 3rem;
-    text-decoration: none;
-}
-
-.icon:hover {
-    color: #a34900;
-    ;
-    text-decoration: none;
 }
   /* end of contact form section */
 
@@ -276,7 +183,7 @@ textarea {
         font-size: x-large;
     } 
 
-    .contact__container {
+    /*.contact__container {
         flex-flow: row nowrap;
         justify-content: center;
     }
@@ -292,5 +199,5 @@ textarea {
         margin: auto;
         margin-top: 20px;
         margin-bottom: 20px;
-    }
+    }*/
 }

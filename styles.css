@@ -24,7 +24,6 @@ html, body {
     display: flex;
     justify-content: space-between;
     height: 50px;
-    height: 6vh;
     width: 100%;
     padding-left: 50px;
 }
@@ -36,7 +35,7 @@ html, body {
     align-items: center;
     cursor: pointer;
     /*font-size: 30px;*/
-    font-size: 2.5vh;
+    font-size: 100%;
     text-decoration: none;
 }
 
@@ -45,7 +44,7 @@ html, body {
     align-items: center;
     text-align: center;
     list-style: none;
-    margin: auto;
+    margin: auto 5% auto auto;
     width: 35%;
     justify-content: space-between;
 }
@@ -143,12 +142,12 @@ hr {
 .projects {
   /*height: 100%;
   whole__project*/
-  display: flex;
   flex-wrap: wrap;
+  display: flex;
   justify-content: center;
 }
 
-/*TODO: Drop down menu filter in mobile, fix padding in mobile*/
+/*TODO: Drop down menu filter in mobile*/
 
 .filterDiv {
   display: none;
@@ -234,11 +233,9 @@ hr {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  text-align: center;
-  font-size: x-large;
+  font-size: 100%;
   font-weight: bold;
 }
-
 /* end of projects */
 
 /* resume section */
@@ -273,8 +270,6 @@ hr {
 
 /* contact form section */
 #contact {
-  font-size: 2.5rem;
-  font-weight: 600;
   margin: 0;
 }
 
@@ -368,13 +363,23 @@ textarea {
 
 .icon:hover {
   color: #a34900;
-  ;
   text-decoration: none;
 }
 
 /* end of contact form section */
+@media screen and (max-width: 450px) {
+  .service-1 {
+    max-width: 50%;
+  }
+}
 
-@media screen and (max-width: 960px) {  
+@media screen and (max-width: 550px) and (min-width: 451px) {
+  .service-1 {
+    max-width: 75%;
+  }
+}
+
+@media screen and (max-width: 960px) { /* and (min-width: 550px) {  */
   .navbar__container {
         padding: 0;
     }
@@ -389,7 +394,6 @@ textarea {
         top: -1000px;
         opacity: 0; 
         transition: all 0.75s ease;
-        background: #000000;
         justify-content: unset;
     }
 
@@ -452,14 +456,17 @@ textarea {
     .slideshow-vid {
       width: 85%;
       margin-top: 6vh;
+      border-radius: 10px;
     }
 
     .aboutme_content {
       text-align: center;
+      padding: 0 4%;
     }
 
     .aboutme_content p {
       text-align: left;
+      padding: 0 7%;
     }
 
     #profile-pic {
@@ -474,27 +481,18 @@ textarea {
     }
 
     #projects,
-    #resume {
+    #resume,
+    #contact {
       margin-bottom: 0;
-    }
-    
-    .projects {
-      margin-top: 0;
     }
 
     .service-1 {
-      width: 75%;
-      margin: 15px;
-      margin-left:auto;
-      margin-right: auto;
-    }
-
-    section {
-      padding-top: 25px;
+      /*width: 75%;
+      max-width: 560px;*/
+      margin: 15px auto;
     }
 
     .resume__paper__container {
-      padding: 0;
       height: 60px;
     }
 
@@ -506,38 +504,30 @@ textarea {
 
     .resume__paper {
       opacity: 0;
-      height: 10%;
+      height: 0;
+      min-height: 0;
     }
 
     .downloadButton {
       opacity: 1;
-      top: auto;
-      text-align: center;
     }
 
     #contact {
       padding-top: 20px;
     }
 
-    .contact__container {
+    /*.contact__container {
       flex-flow: row nowrap;
       justify-content: center;
-    }
+    }*/
 
     .contact__info {
-      margin: auto;
-      text-align: center;
-      margin-top: 20px;
-      margin-bottom: 20px;
+      margin: 20px auto;
     }
 
     .contact__form {
       margin: auto;
       margin-top: 20px;
       margin-bottom: 20px;
-    }
-
-    .text {
-      font-size: medium;
     }
 }
