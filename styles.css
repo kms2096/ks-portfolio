@@ -148,7 +148,6 @@ hr {
 }
 
 /*TODO: Drop down menu filter in mobile*/
-
 .filterDiv {
   display: none;
 } 
@@ -158,15 +157,13 @@ hr {
 } 
 
 /* Style the buttons */
-.btn {
+#btn_container .btn,
+.dropdown_btn {
   background: #ff7300;
   color: #000000;
   border: none;
   border-radius: 10%;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 0.5rem 2rem;
   position: relative;
   display: inline-block;
   text-decoration: none;
@@ -176,16 +173,54 @@ hr {
   cursor: pointer;
 }
 
-.btn:hover {
+#btn_container .btn:hover,
+.dropdown_btn:hover {
   color: #be5600;
   background: #000000;
   transition: all 0.3s ease;
 }
 
-.btn.active {
+#btn_container .btn.active {
   color: #df6400;
   background: #000000;
 }
+
+/*Drop down menu*/
+.filter_menu {
+  padding: 0;
+  display: inline-block;
+}
+
+.dropdown_menu {
+  display: none;
+  position: absolute;
+  /*min-width: 150%;*/
+  z-index: 1;
+  list-style: none;
+  color: #000000;
+  background: #ff7300;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/*.dropdown_menu>li {
+  border-left: 5px solid rgb(255, 0, 0);
+
+}*/
+
+.dropdown_btn {
+  display: none;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown_menu li:hover {background-color: #be5600;}
+
+/* Show the dropdown menu on hover */
+.filter_menu:hover .dropdown_menu {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown 
+.filter_menu:hover .dropdown_btn {background-color: #3e8e41;}*/
+
 
 
 /* Projects */
@@ -536,5 +571,13 @@ textarea {
       margin: auto;
       margin-top: 20px;
       margin-bottom: 20px;
+    }
+    
+    .dropdown_btn {
+      display: inline;
+    }
+
+    #btn_container {
+      display: none;
     }
 }

@@ -59,19 +59,36 @@
           </div>
         </section>
       <!-- projects -->
+      <!-- TODO: Make this a drop-down menu for mobile devices -->
         <div class="projects__container">
             <section>
               <h1 id="projects">Projects</h1>
+              <ul class="filter_menu">
+                <button class="dropdown_btn">Filter</button>
+                <div class="dropdown_menu">
+                  <li class="btn" onclick="filterSelection('all')">Show All</li>
+                  <li class="btn" onclick="filterSelection('CurrentProject')">Current Projects</li>
+                  <li class="btn" onclick="filterSelection('WorkHistory')">Work History</li>
+                  <li class="btn" onclick="filterSelection('C#')">C#</li>
+                  <li class="btn" onclick="filterSelection('C++')">C++</li>
+                  <li class="btn" onclick="filterSelection('Python')">Python</li>
+                  <li class="btn" onclick="filterSelection('Unity')">Unity</li>
+                  <li class="btn" onclick="filterSelection('Unreal')">Unreal</li>
+                  <li class="btn" onclick="filterSelection('GameJam')">Game Jams</li>
+                  <li class="btn" onclick="filterSelection('SoloProject')">Solo Projects</li>
+                  <li class="btn" onclick="filterSelection('GroupProject')">Group Projects</li>
+                </div>
+              </ul>
               <div class="projects">
-                <!-- TODO: Make this a drop-down menu for mobile devices -->
                 <div id="btn_container">
                   <button class="btn active" onclick="filterSelection('all')">Show All</button>
                   <button class="btn" onclick="filterSelection('CurrentProject')">Current Projects</button>
-                  <button class="btn" onclick="filterSelection('Internship')">Internship</button>
-                  <button class="btn" onclick="filterSelection('Research')">Research</button>
+                  <button class="btn" onclick="filterSelection('WorkHistory')">Work History</button>
                   <button class="btn" onclick="filterSelection('C#')">C#</button>
                   <button class="btn" onclick="filterSelection('C++')">C++</button>
                   <button class="btn" onclick="filterSelection('Python')">Python</button>
+                  <button class="btn" onclick="filterSelection('Unity')">Unity</button>
+                  <button class="btn" onclick="filterSelection('Unreal')">Unreal</button>
                   <!-- TODO: Are these needed?? -->
                   <!--button class="btn" onclick="filterSelection('Games')">Games</button>
                   <button class="btn" onclick="filterSelection('Non-Games')">Non-Games</button-->
@@ -95,7 +112,7 @@
                 </script>
                 <!--TODO: move Wyrdsong to someplace other than projects?? Keep it just with tags?? -->
                 <!-- Wyrdsong -->
-                <div class="filterDiv C++ Games Internship GroupProject">
+                <div class="filterDiv C++ Games WorkHistory GroupProject Unreal">
                   <div class="service-1">
                     <a href="gamepages/Wyrdsong.html" style="text-decoration: none;" target="_self">
                       <div class="container">
@@ -108,7 +125,7 @@
                   </div>
                 </div>
                 <!-- REU -->
-                <div class="filterDiv Python Non-Games Research CurrentProject"> <!--grouproject or soloproject-->
+                <div class="filterDiv Python Non-Games WorkHistory CurrentProject"> <!--grouproject or soloproject-->
                   <div class="service-1">
                     <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2153380&HistoricalAwards=false" style="text-decoration: none;" target="_self">
                       <div class="container">
@@ -134,7 +151,7 @@
                   </div>
                 </div>
                 <!-- Musical Deck Builder -->
-                <div class="filterDiv CurrentProject C++ Games ClassProject GroupProject">
+                <div class="filterDiv CurrentProject Games ClassProject GroupProject Unreal">
                   <div class="service-1">
                     <a href="" style="text-decoration: none;" target="_self">
                       <div class="container">
@@ -147,7 +164,7 @@
                   </div>
                 </div>
                 <!-- A.R.C.A.N.A. -->
-                <div class="filterDiv C# Games ClassProject GroupProject">
+                <div class="filterDiv C# Games ClassProject GroupProject Unity">
                   <div class="service-1">
                     <a href="gamepages/Arcana.html" style="text-decoration: none;" target="_self">
                       <div class="container">
@@ -160,7 +177,7 @@
                   </div>
                 </div>
               <!-- High Noon -->
-              <div class="filterDiv C# Games ClassProject SoloProject">
+              <div class="filterDiv C# Games ClassProject SoloProject Unity">
                 <div class="service-1">
                   <a href="gamepages/HighNoon.html" style="text-decoration: none;" target="_self">
                     <div class="container">
@@ -203,7 +220,7 @@
                 </div>
               </div>
               <!-- Space Action Hero -->
-              <div class="filterDiv C# Games SoloProject">
+              <div class="filterDiv C# Games SoloProject Unity">
                 <div class="service-1">
                   <a href="gamepages/SpaceActionHero.html" style="text-decoration: none;" target="_self">
                     <div class="container">
@@ -252,7 +269,7 @@
                 </div>
               </a-->
               <!-- Willow's Mansion -->
-              <div class="filterDiv C# Games GameJam GroupProject">
+              <div class="filterDiv C# Games GameJam GroupProject Unity">
                 <div class="service-1">
                   <a href="gamepages/WillowsMansion.html" style="text-decoration: none;" target="_self">
                     <div class="container">
@@ -265,7 +282,7 @@
                 </div>
               </div>
               <!-- Japan Game Jam -->
-              <div class="filterDiv C# Games GameJam GroupProject">
+              <div class="filterDiv C# Games GameJam GroupProject Unity">
                 <div class="service-1">
                   <a href="" style="text-decoration: none;" target="_self">
                     <div class="container">
